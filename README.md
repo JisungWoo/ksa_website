@@ -1,2 +1,3 @@
 # ksa_website
-ASU Korean Student Association Website
+The website for Korean Students Association @ ASU. Development in progress.
+

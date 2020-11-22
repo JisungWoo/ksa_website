@@ -6,7 +6,47 @@
 <html lang="en">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ASU KSA</title>
+    
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
 
+        .nav-item{
+            padding-left:2rem;
+            padding-top:1rem;
+        }
+        .nav-link{
+            color:white;
+            font-size:large;
+            padding-top: 0;
+            padding-bottom: 0;
+            
+            height: 50px;
+            line-height: 50px;
+        }
+
+        .nav-link:active{
+            color:grey;
+           
+        }
+
+        .nav-item:hover{
+            color:grey;
+        }
+        
+
+        .navbar-brand{
+            padding: 0;
+        }
+        
+        .ksa_logo{
+            height:80px;
+            width:80px;
+        }
+
+
+    </style>
     
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -16,18 +56,20 @@
 
 
 
-<nav class="navbar fixed-top navbar-expand-lg" id = "nav1">
+<nav class="navbar fixed-top navbar-expand-lg bg-dark" id="nav1">
 
     
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         
-        <ul class="nav navbar-nav mx-auto" >
+        <ul class="nav navbar-nav mx-auto ">
             <li class="nav-item active">
-                <a class="navbar-brand" href="{% url 'landing_page' %}">KSA</a>
+                <a class="navbar-brand" href="{% url 'landing_page' %}">
+                    <img class="ksa_logo" src="https://media.discordapp.net/attachments/760701027480764439/779911070810505256/download.png?width=392&height=461">
+                </a>
             </li>
             <li class="nav-item active">
                 <!--Add href for About Page-->
-                <a class="nav-link" href="#">About KSA</a>
+                <a class="nav-link" href="#landing_div1">About KSA</a>
             </li>
             <li class="nav-item active">
                 <!--Add href for About Page-->
@@ -38,8 +80,8 @@
                 <a class="nav-link" href="#">Contact</a>
             </li>
             <li class="nav-item active">
-                <!--Add href for About Page-->
-                <a class="nav-link" href="#">Board Members</a>
+                <!--Add href for About Page--> 
+                <a class="nav-link" href="#landing_div7">Board Members</a>
             </li>
             <li class="nav-item active">
                 <!--Add href for About Page-->
@@ -50,13 +92,12 @@
             </li>
         </ul>
     </div>
-   
-
 </nav>
 
 
 <div class="container-fluid">
     {% block page_content %}{% endblock %}
 </div>
+ 
 
 </html>

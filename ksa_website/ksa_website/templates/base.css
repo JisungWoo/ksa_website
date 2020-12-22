@@ -25,9 +25,25 @@
     text-align: center;
 }
 
+.m_h3 {
+    text-align: center;
+    font-weight: lighter;
+}
+
 .m_human {
     text-align: left;
+    float: left; 
+    width: 30%; 
+    padding:10px;
 }
+
+.m_image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+}
+
 
 .p_h1 {
     text-align: center;

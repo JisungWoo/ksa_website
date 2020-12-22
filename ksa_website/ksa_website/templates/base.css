@@ -1,7 +1,22 @@
+
+.a_t1{
+    color:white;
+    font-family:'Roboto', sans-serif;
+}
+
+.a_header{
+   text-align: center;
+   font-weight: bold;
+  
+}
+
+/* .a_cont1{
+   
+} */
+
 .m_headers {
     text-align: center;
     color: red;
-
 }
 
 #m_testingPara {
@@ -12,7 +27,6 @@
 .p_h1 {
     text-align: center;
     color: blue;
-    
 }
 .s_h1 {
     width :auto;

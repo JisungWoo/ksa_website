@@ -1,7 +1,14 @@
-.m_headers {
+.m_h1 {
     text-align: center;
-    color: red;
+    font-weight: bold;
+}
 
+.m_h2 {
+    text-align: center;
+}
+
+.m_human {
+    text-align: left;
 }
 
 #m_testingPara {

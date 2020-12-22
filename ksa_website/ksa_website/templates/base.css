@@ -1,4 +1,3 @@
-
 .a_t1{
     color: green;
     font-family:'Roboto', sans-serif;
@@ -17,17 +16,25 @@
     font-size:15px;
 }
 
-.m_headers {
+.m_h1 {
     text-align: center;
-    color: red;
+    font-weight: bold;
 }
 
-#m_testingPara {
-    font-style: italic;
-   
+.m_h2 {
+    text-align: center;
+}
+
+.m_human {
+    text-align: left;
 }
 
 .p_h1 {
     text-align: center;
     color: blue;
+}
+
+.s_h1 {
+    width :auto;
+    height :auto;
 }

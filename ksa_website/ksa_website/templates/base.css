@@ -1,18 +1,21 @@
 
 .a_t1{
-    color:white;
+    color: green;
     font-family:'Roboto', sans-serif;
 }
 
 .a_header{
    text-align: center;
    font-weight: bold;
-  
 }
 
-/* .a_cont1{
-   
-} */
+.a_cont1{
+   font-size: 25px;
+}
+
+.a_cont2{
+    font-size:15px;
+}
 
 .m_headers {
     text-align: center;

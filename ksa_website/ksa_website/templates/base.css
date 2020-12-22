@@ -1,3 +1,4 @@
+
 .a_t1{
     color:white;
     font-family:'Roboto', sans-serif;
@@ -9,7 +10,21 @@
   
 }
 
-.a_cont1{
+/* .a_cont1{
    
+} */
 
+.m_headers {
+    text-align: center;
+    color: red;
+}
+
+#m_testingPara {
+    font-style: italic;
+   
+}
+
+.p_h1 {
+    text-align: center;
+    color: blue;
 }

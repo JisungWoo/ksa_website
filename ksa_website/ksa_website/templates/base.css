@@ -1,20 +1,48 @@
 .a_t1{
-    color:white;
+    display: inline-block;
     background-color: black;
-    font-family:'Roboto', sans-serif;
+    color:white;
+    font-family: 'JetBrains Mono', monospace;
+    width: 1500px;
+    height:550px;
 }
 
 .a_header{
-   text-align: center;
-   font-weight: bold;
+    text-align: center;
+    font-weight:600;
+    font-size: 35px;
+ }
+
+.a_wrapper{
+    text-align: center;
+    padding: 40px 10px;
 }
 
-.a_cont1{
-   font-size: 25px;
+.a_p{
+    width: 200px;
+    height: 150px;
+    text-align: center;
+    display: inline-block;
+    padding: 0 40px;
+    border-radius:50%;
+    background-color:black;
 }
 
-.a_cont2{
-    font-size:15px;
+#a_cont1{
+    font-size:30px;
+    font-weight: bold;
+}
+
+#a_cont2{
+    font-size:18px;
+    font-style:normal;
+    font-weight: 500;
+}
+
+#a_cont3{
+    font-style: italic;
+    font-size:14px;
+    font-weight: 400;
 }
 
 .m_h1 {

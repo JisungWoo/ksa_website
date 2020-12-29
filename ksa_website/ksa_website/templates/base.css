@@ -13,7 +13,7 @@
     font-size: 32px;
  }
 
- #a_header1{
+#a_header1{
     padding-top:3rem;
  }
 
@@ -88,7 +88,7 @@
 .m_human {
     text-align: left;
     float: left; 
-    width: 30%; 
+    width: 22%; 
     padding:10px;
 }
 
@@ -97,6 +97,8 @@
     margin-left: auto;
     margin-right: auto;
     width: 200px;
+    height: 200px;
+    border-radius: 50%;
 }
 
 

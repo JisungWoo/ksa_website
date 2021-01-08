@@ -53,7 +53,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type ="text/css" href = "{% static 'style.css' %}">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Questrial&display=swap" rel="stylesheet">
+    <link href="aboutksa.css" rel="stylesheet">
 
 
 <nav class="navbar fixed-top navbar-expand-lg bg-dark" id="nav1">
@@ -69,6 +71,21 @@
             </li>
             <li class="nav-item active">
                 <!--Add href for About Page-->
+                <div class="a_main">
+                    <div id="a_contents">
+                        <img id="a_flag" src="korea.png" alt="koFlag"><img id="a_logo" src="https://media.discordapp.net/attachments/796280257354924033/796451019109695508/about_ksa.png" alt="logo"><img id="a_flag" src="usa.png" alt="usaFlag">
+                        <h1 id="a_header" class="a_lg-text">
+                        </h1>
+                        <p><b style="font-size: 22px;">KSA </b>is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                            It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+                            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+                            and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        </p>
+                    </div>
+                </div>
+                
                 <a class="nav-link" href="#landing_div1">About KSA</a>
             </li>
             <li class="nav-item active">
@@ -94,7 +111,7 @@
     </div>
 </nav>
 
-
+<script src="aboutksa.js"></script>
 <div class="container-fluid">
     {% block page_content %}{% endblock %}
 </div>

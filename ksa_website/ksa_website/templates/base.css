@@ -248,9 +248,9 @@ img, p{
 .gal {
   
     
-    padding-right : 300px ;
+    /* padding-right : 300px ; */
     /* padding-bottom : 100px ; */
-    padding-left : 300px ;
+    /* padding-left : 300px ; */
 
 	-webkit-column-count: 3; /* Chrome, Safari, Opera */
     -moz-column-count: 3; /* Firefox */
@@ -277,12 +277,14 @@ img, p{
 .s_container {
     position: relative;
     width: 50%;
+    
 }
 
 .image {
   opacity: 1;
   display: block;
-  width: 100%;
+  width : 100%;
+  /* max-width : 100%; */
   height: auto;
   transition: .5s ease;
   backface-visibility: hidden;
@@ -296,15 +298,17 @@ img, p{
   /* width : 50px;
   height : 50%; */
   top: 50%;
-  left: 51.5%;
+  left: 51%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
 
+
 .s_header {
 
     text-align: center;
+    font-size-adjust: 50px;
 
 }
 
@@ -332,7 +336,8 @@ img {
 .text {
   background-color: #FFEBCD;
   color: black;
-  font-size: 16px;
+  font-size-adjust: 16px;
+  
   /* width: 50px; */
   padding: 16px 32px;
   /* padding: 16px; */

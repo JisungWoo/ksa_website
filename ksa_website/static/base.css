@@ -126,7 +126,6 @@ img, p{
     background-color: rgb(167, 185, 145);
     width: 100%;
     height: 300px;
-    margin-top:30px;
     padding: 20px;
     position: static;
 
@@ -135,7 +134,7 @@ img, p{
 .m_box1{
     position: absolute;
     width: 100%;
-    margin-top: -240px;
+    padding: 100px;
     perspective: 1000px;
 }
 
@@ -272,7 +271,6 @@ img, p{
         
 }
 
-
 .s_container {
     position: relative;
     width: 50%;
@@ -301,7 +299,7 @@ img, p{
   text-align: center;
 }
 
-.s_header { 
+.s_header {
 
     text-align: center;
 

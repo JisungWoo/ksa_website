@@ -29,15 +29,12 @@ img, p{
     vertical-align: middle;
 }
 
-<<<<<<< HEAD
-=======
 #a_logo{
     width:450px;
     height:200px;
     margin:0 20px;
 }
 
->>>>>>> 2e79bc0abaac2d1c3ce8d724c9bd36d3cd4d2617
 .a_box{
     margin:0px auto;
     width:80px;
@@ -248,7 +245,6 @@ img, p{
 
 
 
-<<<<<<< HEAD
 .gal {
   
     
@@ -263,9 +259,6 @@ img, p{
 	
 	}	
 	.gal div{ width: 100%; padding: 7px 0;}
-=======
-.gal div{ width: 100%; padding: 7px 0;}
->>>>>>> 2e79bc0abaac2d1c3ce8d724c9bd36d3cd4d2617
 @media (max-width: 500px) {
 		
 	.gal {
@@ -303,7 +296,7 @@ img, p{
   /* width : 50px;
   height : 50%; */
   top: 50%;
-  left: 50%;
+  left: 51.5%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;

@@ -244,6 +244,12 @@ img, p{
     color: blue;
 }
 
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> 3fe036dbf053bc03e70e0560554785ca50fd93b7
 .gal {
   
     
@@ -257,7 +263,11 @@ img, p{
 	  
 	
 	}	
+<<<<<<< HEAD
 .gal div { width: 100%; padding: 7px 0;}
+=======
+	.gal div{ width: 100%; padding: 7px 0;}
+>>>>>>> 3fe036dbf053bc03e70e0560554785ca50fd93b7
 @media (max-width: 500px) {
 		
 	.gal {
@@ -295,7 +305,7 @@ img, p{
   /* width : 50px;
   height : 50%; */
   top: 50%;
-  left: 50%;
+  left: 51.5%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;

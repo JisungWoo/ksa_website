@@ -34,9 +34,26 @@ a_header(randomString());
 console.log(selectString);
 console.log(selectStringArr);
 
-// //cursor blink effect
-// function cursorBlink(){
-//     target.classList.toggle("active");
-// }
-// setInterval(cursorBlink,450);
-//, "acerca de KSA?", "关于KSA？","KSAについて?"(other languages)
+//changing languages
+function toggle_Ko() {
+    var ko_bt = document.getElementById("a_koBt");
+    var en_bt = document.getElementById("a_enBt");
+    console.log(ko_bt.style.visibility);
+    console.log(en_bt.style.visibility);
+    if (ko_bt.style.visibility === "hidden" && en_bt.style.visibility === "visible") {
+        ko_bt.style.visibility = "visible";
+        en_bt.style.visibility = "hidden";
+    }
+}
+
+
+function toggle_En() {
+    var ko_bt = document.getElementById("a_koBt");
+    var en_bt = document.getElementById("a_enBt");
+    console.log(ko_bt.style.visibility);
+    console.log(en_bt.style.visibility);
+    if (en_bt.style.visibility === "hidden" && ko_bt.style.visibility ==="visible") {
+      en_bt.style.visibility = "visible";
+      ko_bt.style.visibility = "hidden";
+    }
+}

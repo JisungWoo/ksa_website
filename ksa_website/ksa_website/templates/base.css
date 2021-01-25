@@ -29,15 +29,12 @@ img, p{
     vertical-align: middle;
 }
 
-<<<<<<< HEAD
-=======
 #a_logo{
     width:450px;
     height:200px;
     margin:0 20px;
 }
 
->>>>>>> 2e79bc0abaac2d1c3ce8d724c9bd36d3cd4d2617
 .a_box{
     margin:0px auto;
     width:80px;
@@ -51,7 +48,7 @@ img, p{
 
 #a_flag p:hover{
     opacity:1;
-    transform: all 0.5s;
+    transform: all 0.5s;.
 }
 
 #a_header h1{
@@ -124,13 +121,13 @@ img, p{
     }
 }
 
+
 .m_background {
-    background-color: rgb(167, 185, 145);
+    background-color: rgb(196, 165, 139);
     width: 100%;
     height: 300px;
     padding: 20px;
     position: static;
-
 }
 
 .m_box1{
@@ -146,6 +143,7 @@ img, p{
     font-size: 40px;
     font-family: Tahoma, Geneva, sans-serif;
     font-style: normal;
+    color: rgb(26, 15, 2);
 }
 
 .m_h2 {
@@ -153,6 +151,7 @@ img, p{
     font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
     font-style: normal;
     font-weight: 400;
+    color: rgb(26, 15, 2);
 }
 
 .m_h3 {
@@ -160,6 +159,7 @@ img, p{
     font-family: Tahoma, Geneva, sans-serif;
     font-style: normal;
     font-weight: 500;
+    color: rgb(26, 15, 2);
 }
 
 .m_h4 {
@@ -167,24 +167,82 @@ img, p{
     font-weight: bold;
     font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
     font-style: normal;
+    color:rgb(26, 15, 2);
+}
+.m_h5 {
+    text-align: center;
+    font-family: Georgia, Serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size:20px;
+    color: rgb(26, 15, 2);
+}
+.m_h6 {
+    text-align: center;
+    font-weight: bold;
+    font-family: Georgia, Serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size:20px;
+    color: rgb(26, 15, 2);
+}
+.m_h7 {
+    padding-left: 9%;
+    text-align: left;
+    font-size: 30px;
+    font-family:Georgia, Serif;
+    font-style: normal;
+    font-weight: 100;
+    color: rgb(26, 15, 2);
+}
+.m_h8 {
+    font-family: Georgia, Serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size:30px;
+    color: rgb(26, 15, 2);
+}
+.m_h9 {
+    font-family: Tahoma, Geneva, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size:26px;
+    color: rgb(26, 15, 2);
 }
 
-.m_human {
-    transition: transform 2s;
-    transform-style: preserve-3d;
-    cursor: pointer;
+
+.m_container{
+    transition: all 0.5s ease-out;
+    -webkit-perspective: 1000;
+    -moz-perspective: 1000;
+    -o-perspective: 1000;
+    perspective: 1000;
     width: 280px; 
     height: 430px;
-    margin-left: 3%;
+    margin-left: 4%;
     margin-top: 20px;
+    display: inline-flex;
+}
+
+
+.m_human {
+    
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(245, 224, 194);
+    padding-top:10px;
+    box-shadow: 3px 3px 9px 4px rgb(102, 102, 102);
+
 }
 
 .m_box2{
     background-color: rgb(250, 250, 248);
+    position: relative;
+    margin-top: 10px;
     height: 60px;
-    margin-top: 5px;
     padding-bottom:3px;
-    padding-left: 51px;
+    padding-left:30px;
 }
 
 .m_image {
@@ -202,41 +260,108 @@ img, p{
     float: left; 
     width: 30px;
     height: 30px;
-    margin: 7%;
+    margin-top: 5%;
+    margin-left: 10%;
 }
 
-.m_front, .m_back{
+.m_SNS:hover{
+    background:rgb(245, 224, 194);
+    color: white;
+}
+
+/* pop up*/
+
+.m_test {
     position: absolute;
-    flex-direction: column;
-    backface-visibility: hidden;
-    width: 280px; 
-    height: 430px;
+}
+  
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+  
+.popup {
+    margin: 10% auto;
+    margin-top:200px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 50%;
+    min-width: 600px;
+    max-width: 700px;
+    height: 500px;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+  
+.popup h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
 }
 
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+.popup .close:hover {
+    color: #da2d2d;
+}
+.popup .content {
+    max-height: 100%;
+    overflow: auto;
+}  
 
-.m_front{
-    background-color: #f5efcf;
-    padding-top:10px;
-    z-index: 2;
-    transform: rotateY(0deg);
+.m_popimg {
+    display:block;
+    margin-left: 5%;
+    margin-top: 40px;
+    width: 200px;
+    height: 300px;
+    size:100%;
+    position: absolute;
 }
 
-.m_front:hover {
-    bottom: 2px;
-    right: 2px;
-    box-shadow: 0px 0px 20px 1px #000;
+.m_popcont {
+    position: absolute;
+    perspective: 1000;
+    top: 20%;
+    left: 45%;
+    min-width:300px;
+    max-width:400px
+    
+}
+  
+@media screen and (max-width: 700px){
+    .box{
+      width: 70%;
+    }
+    .popup{
+      width: 70%;
+    }
 }
 
-.m_back{
-    background-color: brown;
-    transform: rotateY(180deg);
-}
+/* pop up test*/
 
-.m_back:hover {
-    bottom: 2px;
-    right: 2px;
-    box-shadow: 0px 0px 20px 1px #000;
-}
+
 
 
 
@@ -246,9 +371,6 @@ img, p{
 }
 
 
-
-
-<<<<<<< HEAD
 .gal {
   
     
@@ -263,9 +385,6 @@ img, p{
 	
 	}	
 	.gal div{ width: 100%; padding: 7px 0;}
-=======
-.gal div{ width: 100%; padding: 7px 0;}
->>>>>>> 2e79bc0abaac2d1c3ce8d724c9bd36d3cd4d2617
 @media (max-width: 500px) {
 		
 	.gal {

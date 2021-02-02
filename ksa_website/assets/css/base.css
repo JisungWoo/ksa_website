@@ -42,91 +42,192 @@ img, p{
     margin:0;
 }
 
-.a_container{
-    background-image:url('https://cdn.discordapp.com/attachments/765091110737412103/800260431926132746/image0.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 1532px;
-    height:770px;
-    font-family: Tahoma, Geneva, sans-serif;
-    color:black;
-    /* position: absolute; */
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
 }
 
+img, p{
+    margin:0;
+}
+
+/* first page */
+.a_firstPage{
+    width:1532px;
+    height:1100px;
+    font-family: Tahoma, Geneva, sans-serif;
+    /* background: url(firstBackground.png); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.a_homeLogo{
+    width: 400px;
+    display:block;
+    margin-left: 37%;
+    text-align: center;
+}
+
+#a_logo{
+    width:180px;
+    padding-top:50px;
+    padding-right:10px;
+}
+
+#a_KSAshort{
+    color: white;
+    margin-top: 0;
+    text-align: center;
+    font-size: 65px;
+}
+
+#a_KSAlong{
+    color: white;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 20px;
+    position:absolute;
+    top:36%;
+    left:41%;
+}
+
+.a_icon{
+    width:110px;
+    display:block;
+    margin-left: 46.5%;
+    position:absolute;
+    bottom: -24%;
+    text-align: center;
+}
+
+/* about KSA */
+.a_container{
+    width: 1532px;
+    height:770px;
+    background: url(SecondBackground.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Tahoma, Geneva, sans-serif;
+    color:rgb(255, 255, 255);
+    position: relative;
+}
+
+/* contant1 */
 .a_content1{
-    background-color: darkblue;
     text-align: center;
     position:absolute;
-    top:170px;
+    top:140px;
     padding: 5px 0;
     width:100%;
     height:35%;
 }
 
-#a_flag1{
-    margin-top: 2.5%;
+#a_koFlag{
+    margin-top:2%;
     margin-left: 13%;
     position: absolute;
-
+    top:50px;
+    left:10px;
+    border-style: double;
+    border-width: 5px;
 }
 
-#a_logo{
-    background:chocolate;
-    /* width:300px; */
-}
-
-#a_flag2{
-    margin-top: 2.5%;
+#a_usaFlag{
+    margin-top:2%;
     margin-right: 13%;
     position: absolute;
+    top:50px;
+    right:10px;
+    border-style: double;
+    border-width: 5px;
+}
+
+#a_line{
+    display:inline-block;
+    margin-bottom: 35px;
+    opacity:0.5;
+}
+
+#a_university{
+    width:120px;
+}
+
+/* contant2 */
+.a_content2{
+    margin-top: 1%;
+    margin-bottom:1%;
+    position:absolute;
+    top:450px;
+    left:20%;
+    right:20%;
+    text-align: center;
+    margin: 1px 0;
+    padding:9px 0;
 }
 
 #a_header h1{
     font-weight: bold;
     font-size: 40px;
     font-style: normal;
-    margin: 100px 0 10px;
-}
-
-.a_content2{
-    background-color: darkcyan;
-    margin-top: 1%;
-    margin-bottom:1%;
-    position:absolute;
-    top:62%;
-    left:20%;
-    right:20%;
-    text-align: center;
-    margin: 10px 0;
-    padding:5px 0;
 }
 
 .a_content2 h1{
-    font-size: 25px;
+    font-size: 28px;
+    margin:5px 0;
 }
 
 .a_content2 p{
     font-size: small;
 }
 
+/* contant3 */
+.a_content3{
+    position:absolute;
+    text-align: center;
+    position:absolute;
+    top:200px;
+}
+.a_cont3Box1{
+   height: 110px;
+}
+
+.a_cont3Box2{
+    padding: 50px;
+}
+
+/* language Buttons */
+#a_koBt{
+    width:50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 20%;
+    margin-bottom:1%;
+}
+
 .a_button{
-    padding: 10px 10px;
+    padding: 20px 10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 15px;
-    margin: 10px 2px;
+    font-size: 13px;
+    margin: 13px 0;
     transition-duration: 0.4s;
     cursor: pointer; 
+    border:none;
 }
 
 .a_button1{
     background: transparent;
     border: none;
     letter-spacing: 0.1em;
-    margin-top: 3rem;
+    margin-top: 2.5rem;
+    padding-left:8px;  
+    outline: none;
 }
-
 
 .a_button1:after {    
     background: none repeat scroll 0 0 transparent;
@@ -144,7 +245,6 @@ img, p{
     transition: 0.5s;
     opacity: 1;
     width: 100%; 
-    outline: none;
 }
 
 .a_button2{
@@ -152,6 +252,7 @@ img, p{
     border: none;
     letter-spacing: 0.1em;
     margin-top: 3rem;
+    outline: none;
 }
 
 .a_button2:after {    
@@ -170,23 +271,6 @@ img, p{
     width: 100%; 
 }
 
-.a_content3{
-    position:absolute;
-    text-align: center;
-    margin-top: 17%;
-}
-
-#a_koBt{
-    width:50%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    font-size: 15px;
-    margin-top: 20%;
-    margin-bottom:1%;
-    visibility: hidden;
-}
-
 #a_enBt{
     width:50%;
     margin-left: auto;
@@ -195,24 +279,11 @@ img, p{
     font-size: 15px;
     margin-top: 20%;
     margin-bottom:1%;
-    visibility: visible;
 }
 
-#a_demo1{
-    animation: fadeIn 2s;
-}
-
-@keyframes fadeIn {
-    from{
-        opacity:0;
-    }
-    to{
-        opacity:1;
-    }
-}
-
-#a_demo2{
-    animation: fadeIn 2s;
+#a_koBt{
+    animation: fadeIn 4s;
+    line-height: 25px;
 }
 
 @keyframes fadeIn {
@@ -224,6 +295,21 @@ img, p{
     }
 }
 
+#a_enBt{
+    animation: fadeIn 4s;
+    line-height: 25px
+}
+
+@keyframes fadeIn {
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}
+
+<<<<<<< HEAD
 #a_flag1{
     width : 70px;
     background-color: mediumaquamarine;
@@ -252,6 +338,9 @@ img, p{
 }
 
 /* members ------------- */
+=======
+/* members */
+>>>>>>> f2d515e1e8392e29741f4eba530b8557d3a50c39
 
 .m_background {
     background-color: rgb(141, 160, 133);

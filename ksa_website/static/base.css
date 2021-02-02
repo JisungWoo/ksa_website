@@ -283,7 +283,7 @@ img, p{
   height: auto;
   transition: .5s ease;
   backface-visibility: hidden;
-  /* position: relative; */
+  /* position: absolute; */
 }
 
 .middle {
@@ -329,7 +329,7 @@ img {
 .text {
   background-color: #FFEBCD;
   color: black;
-  font-size: 16px;
+  font-size-adjust: 16px;
   /* width: 50px; */
   padding: 16px 32px;
   /* padding: 16px; */

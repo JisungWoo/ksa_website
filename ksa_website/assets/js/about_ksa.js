@@ -1,21 +1,35 @@
-let target = document.querySelector("#a_header");
+(function(window, document, undefined){
+
+    // code that should be taken care of right away
+
+    window.onload = init;
+
+      function init(){
+        // the code to be called when the dom has loaded
+        // #document has its nodes
+        a_header(randomString());
+      }
+
+})(window, document, undefined);
 
 function randomString(){
-    let stringArr = ["KSA 소개","About KSA"];
-    let selectString = stringArr[Math.floor(Math.random()*stringArr.length)];
-    let selectStringArr = selectString.split("");
+    var stringArr = ["KSA 소개","About KSA"];
+    var selectString = stringArr[Math.floor(Math.random()*stringArr.length)];
+    var selectStringArr = selectString.split("");
 
     return selectStringArr;
 }
 
 //reset typing
 function resetTyping(){
+    var target = document.getElementById("a_header");
     target.textContent="";
     a_header(randomString());
 }
 
 //print each letter
 function a_header(randomArr){
+    var target = document.getElementById("a_header");
     console.log(randomArr);
     //recursion function
     if(randomArr.length > 0){
@@ -29,31 +43,13 @@ function a_header(randomArr){
     }
 }
 
-a_header(randomString());
-
-console.log(selectString);
-console.log(selectStringArr);
-
-//changing languages
+//changing languages - About KSA
 function toggle_Ko() {
-    var ko_bt = document.getElementById("a_koBt");
-    var en_bt = document.getElementById("a_enBt");
-    console.log(ko_bt.style.visibility);
-    console.log(en_bt.style.visibility);
-    if (ko_bt.style.visibility === "hidden" && en_bt.style.visibility === "visible") {
-        ko_bt.style.visibility = "visible";
-        en_bt.style.visibility = "hidden";
-    }
+    document.getElementById("a_enBt").style.display = "none"
+    document.getElementById("a_koBt").style.display = "block"
 }
 
-
 function toggle_En() {
-    var ko_bt = document.getElementById("a_koBt");
-    var en_bt = document.getElementById("a_enBt");
-    console.log(ko_bt.style.visibility);
-    console.log(en_bt.style.visibility);
-    if (en_bt.style.visibility === "hidden" && ko_bt.style.visibility ==="visible") {
-      en_bt.style.visibility = "visible";
-      ko_bt.style.visibility = "hidden";
-    }
+    document.getElementById("a_koBt").style.display = "none"
+    document.getElementById("a_enBt").style.display = "block"
 }

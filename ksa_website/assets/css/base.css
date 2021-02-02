@@ -251,10 +251,10 @@ img, p{
     margin: 100px 0 10px;
 }
 
-/* members */
+/* members ------------- */
 
 .m_background {
-    background-color: rgb(196, 165, 139);
+    background-color: rgb(141, 160, 133);
     width: 100%;
     height: 300px;
     padding: 20px;
@@ -270,15 +270,17 @@ img, p{
     margin-top: -300px;
     padding-top: 100px;
     padding-bottom: 100px;
+    
 }
 
+/* text - starts*/
 .m_h1 {
     text-align: center;
     font-weight: bold;
     font-size: 40px;
     font-family: Tahoma, Geneva, sans-serif;
     font-style: normal;
-    color: rgb(26, 15, 2);
+    color: rgb(250, 249, 249);
 }
 
 .m_h2 {
@@ -286,7 +288,7 @@ img, p{
     font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
     font-style: normal;
     font-weight: 400;
-    color: rgb(26, 15, 2);
+    color: rgb(43, 18, 5);
 }
 
 .m_h3 {
@@ -295,7 +297,7 @@ img, p{
     font-style: normal;
     font-weight: 800;
     font-size: 20px;
-    color: rgb(26, 15, 2);
+    color: rgb(43, 18, 5);
 }
 
 .m_h4 {
@@ -306,7 +308,7 @@ img, p{
     font-size: 20px;
     font-weight: 800;
    
-    color:rgb(26, 15, 2);
+    color:rgb(43, 18, 5);
 }
 .m_h5 {
     text-align: center;
@@ -348,6 +350,26 @@ img, p{
     font-size:26px;
     color: rgb(26, 15, 2);
 }
+.m_h10 {
+    text-align: center;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    color: rgb(252, 248, 248);
+}
+/* text - ends */
+
+
+/* cards */
+.m_box3{
+    left: 2%;
+    width: 1600px; 
+    height: 2000px;
+    perspective: 1000;
+    margin-left: 2%;
+}
+
 
 
 .m_container{
@@ -358,30 +380,27 @@ img, p{
     perspective: 1000;
     width: 280px; 
     height: 430px;
-    margin-left: 4%;
-    margin-top: 20px;
+    margin-left: 15%;
+    margin-top: 50px;
+    margin-bottom: 20px;
     display: inline-flex;
 }
 
-
 .m_human {
-    
     position: relative;
     height: 100%;
     width: 100%;
-    background-color: rgb(245, 224, 194);
+    background-color:rgb(245, 224, 194);
     padding-top:10px;
-    box-shadow: 3px 3px 9px 4px rgb(102, 102, 102);
-
+    box-shadow: 3px 3px 9px 4px rgb(36, 34, 34);
 }
 
 .m_box2{
-    background-color: rgb(250, 250, 248);
+    background-color: rgb(252, 252, 250);
     position: relative;
     margin-top: 10px;
     height: 60px;
-    padding-bottom:3px;
-    padding-left:30px;
+    padding-left: 10%;
 }
 
 .m_image {
@@ -397,23 +416,22 @@ img, p{
 .m_SNS {
     display: block;
     float: left; 
-    width: 30px;
-    height: 30px;
-    margin-top: 5%;
+    width: 40px;
+    height: 40px;
     margin-left: 10%;
+    margin-top: 4%;
 }
 
 .m_SNS:hover{
     background:rgb(245, 224, 194);
     color: white;
 }
+/* cards - ends */
 
 /* pop up*/
-
 .m_test {
     position: absolute;
 }
-  
 
 .overlay {
     position: fixed;
@@ -488,7 +506,8 @@ img, p{
     max-width:400px
     
 }
-  
+
+
 @media screen and (max-width: 700px){
     .box{
       width: 70%;
@@ -498,16 +517,18 @@ img, p{
     }
 }
 
-/* pop up test*/
+/* pop up - ends */
+/* members ends */
 
 
+
+
+/* pictures */
 .p_h1 {
     text-align: center;
     color: blue;
 }
 
-
-/* pictures */
 
 .gal {
   

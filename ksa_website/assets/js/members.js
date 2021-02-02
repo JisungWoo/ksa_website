@@ -12,7 +12,6 @@ $(document).ready(function () {
           event.preventDefault();
         };
     
-    doc.on("click", "#open-popup", showPopup);
     doc.on("click", ".popup__close", hidePopup);
     
     doc.keypress(function (event) {

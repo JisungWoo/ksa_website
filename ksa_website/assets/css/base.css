@@ -309,46 +309,22 @@ img, p{
     }
 }
 
-<<<<<<< HEAD
-#a_flag1{
-    width : 70px;
-    background-color: mediumaquamarine;
-    position: absolute;
-    top:50px;
-    left:10px;
-}
-
-#a_flag2{
-    width : 70px;
-    background-color: mediumaquamarine;
-    position: absolute;
-    top:50px;
-    right:10px;
-}
-
-#a_logo{
-    background:chocolate;
-    width:120px;
-}
-#a_header h1{
-    font-weight: bold;
-    font-size: 40px;
-    font-style: normal;
-    margin: 100px 0 10px;
-}
-
-/* members ------------- */
-=======
 /* members */
->>>>>>> f2d515e1e8392e29741f4eba530b8557d3a50c39
 
-.m_background {
+.m_background1 {
+    width: 100%;
+    height: 1500px;
+    filter: blur(3px);
+    position: absolute;
+}
+
+.m_background2 {
     background-color: rgb(141, 160, 133);
     width: 100%;
     height: 300px;
     padding: 20px;
-    margin-top:20px;
-    position: static;
+    position: relative;
+    top: 0px;
 }
 
 .m_box1{
@@ -386,7 +362,7 @@ img, p{
     font-style: normal;
     font-weight: 800;
     font-size: 20px;
-    color: rgb(43, 18, 5);
+    color: rgb(5, 5, 5);
 }
 
 .m_h4 {
@@ -414,7 +390,7 @@ img, p{
     font-style: normal;
     font-weight: 600;
     font-size:20px;
-    color: rgb(26, 15, 2);
+    color: rgb(3, 3, 3);
 }
 .m_h7 {
     padding-left: 9%;
@@ -423,7 +399,7 @@ img, p{
     font-family:Georgia, Serif;
     font-style: normal;
     font-weight: 100;
-    color: rgb(26, 15, 2);
+    color: rgb(165, 114, 51);
 }
 .m_h8 {
     font-family: Georgia, Serif;
@@ -447,16 +423,20 @@ img, p{
     font-size: 20px;
     color: rgb(252, 248, 248);
 }
+
+.m_h11{
+    padding-left: 43%;
+}
 /* text - ends */
 
 
 /* cards */
 .m_box3{
     left: 2%;
-    width: 1600px; 
+    width: 100%; 
     height: 2000px;
     perspective: 1000;
-    margin-left: 2%;
+    margin-right: 5%;
 }
 
 
@@ -552,11 +532,6 @@ img, p{
     transition: all 5s ease-in-out;
 }
   
-.popup h2 {
-    margin-top: 0;
-    color: #333;
-    font-family: Tahoma, Arial, sans-serif;
-}
 
 .popup .close {
     position: absolute;
@@ -592,8 +567,9 @@ img, p{
     top: 20%;
     left: 45%;
     min-width:300px;
-    max-width:400px
-    
+    max-width:400px;
+    padding-right:2%;
+
 }
 
 

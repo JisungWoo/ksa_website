@@ -82,6 +82,7 @@ body {
     transition: opacity 500ms;
     visibility: hidden;
     opacity: 0;
+    z-index: 2;
 }
 .s_overlay:target {
     visibility: visible;
@@ -100,7 +101,7 @@ body {
     height: 500px;
     position: relative;
     transition: all 5s ease-in-out;
-    z-index: 3;
+
     /* opacity: 1; */
 }
   
@@ -123,18 +124,23 @@ body {
 .s_popup .s_close:hover {
     color: #da2d2d;
 }
-.s_popup .s_content {
-    max-height: 100%;
-    overflow: auto;
-}  
+/* .s_popup {
+    height: 50%;
+    width: 50%;
+    margin: auto;
+
+}   */
+.s_content {
+    height:100%;
+    width:100%;
+}
 
 .s_popimg {
-    display:block;
-    margin-left: 5%;
-    margin-top: 40px;
-    width: 200px;
-    height: 300px;
-    size:100%;
+    margin: auto;
+    margin-top: 5%;
+    margin-left: 7%;
+    max-height: 80%;
+    max-width: 80%;
     position: absolute;
 }
 

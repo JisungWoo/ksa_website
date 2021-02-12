@@ -3,6 +3,9 @@ html {
     scroll-behavior: smooth;
 }
 
+.container-fluid {
+  margin-top: 300px
+}
 .nav-item{
     padding-left:2rem;
     padding-top:1rem;
@@ -67,6 +70,7 @@ img, p{
  
     top: 0;
     position: fixed;
+    z-index: -3;
 }
 
 .a_homeLogo{
@@ -588,104 +592,186 @@ img, p{
 
 
 /* pictures */
-.p_h1 {
-    text-align: center;
-    color: blue;
+.picture{
+  margin-bottom: 200px;
 }
-
-
-.gal {
-  
-    
-    padding-right : 300px ;
-    /* padding-bottom : 100px ; */
-    padding-left : 300px ;
-
-	-webkit-column-count: 3; /* Chrome, Safari, Opera */
-    -moz-column-count: 3; /* Firefox */
-    column-count: 3;
-	  
-	
-	}	
-	.gal div{ width: 100%; padding: 7px 0;}
-@media (max-width: 500px) {
-		
-	.gal {
-	
-      
-    -webkit-column-count: 1; /* Chrome, Safari, Opera */
-      -moz-column-count: 1; /* Firefox */
-      column-count: 1;
-      
-    
-    }
-        
-}
-
-
-.s_container {
-    position: relative;
-    width: 80%;
-}
-
-.image {
-  opacity: 1;
-  display: block;
-  width: 100%;
-  height: auto;
-  transition: .5s ease;
-  backface-visibility: hidden;
-  /* position: relative; */
-}
-
-.middle {
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  /* width : 50px;
-  height : 50%; */
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+.child-page-listing h2 {
+  margin-top: -180px;
+  margin-bottom: 1.5em;
   text-align: center;
-}
-
-.s_header {
-
-    text-align: center;
-
-}
-
-img {
-     
-     
-    padding: 5px; 
-    width: 150px; 
-  }
   
-  
-  img:hover {
-    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
-  }
-
-
-.s_container:hover .image {
-  opacity: 0.3;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 1em;
+  z-index: -1;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
-.s_container:hover .middle {
+
+/* hover styles */
+
+.location-listing {
+  position: relative;
+}
+
+.location-title-image {
+  height: 300px;
+  width: 300px;
+}
+
+.location-image {
+  line-height: 0;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+.location-image img {
+  filter: blur(0px);
+  transition: filter 0.3s ease-in;
+  height: 100%;
+  width: 100%;
+}
+
+.location-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: none;
+  z-index: 1;
+  position: absolute;
+  margin: auto;
+  height: 300px;
+  width: 300px;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity .5s;
+  background: rgba(90,0,10,0.4);
+  color: white;
+  
+  /* position the text in t’ middle*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.location-listing:hover .location-title {
   opacity: 1;
 }
 
-.text {
-  background-color: #FFEBCD;
-  color: black;
-  font-size: 16px;
-  /* width: 50px; */
-  padding: 16px 32px;
-  /* padding: 16px; */
+.location-listing:hover .location-image img {
+  filter: blur(2px);
 }
+
+/* pop up */
+
+.picture_popup {
+  position: absolute;
+}
+
+
+.s_overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+  z-Index: 2;
+}
+.s_overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.s_popup {
+  margin: 10% auto;
+  margin-top:200px;
+  padding: 20px;
+  background: rgb(255, 246, 193);
+  border-radius: 5px;
+  width:50%;
+  min-width: 600px;
+  max-width: 700px;
+  height: 500px;
+  position: relative;
+  transition: all 5s ease-in-out;
+  z-index: 3;
+
+}
+
+/* .s_popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+} */
+
+.s_popup .s_close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.s_popup .s_close:hover {
+  color: #da2d2d;
+}
+.s_popup .s_content {
+  max-height: 100%;
+  max-width: 100%;
+  /* overflow: auto; */
+}  
+
+.s_popimg {
+  display:block;
+  margin-left: 5%;
+  margin-top: 40px;
+  /* width: 80%;
+  height: 85%; */
+  max-width: 100%;
+  max-height: 100%;
+  size:100%;
+  position: absolute;
+}
+
+.s_background {
+  background-color: rgb(141, 160, 133);
+  width: 100%;
+  height: 300px;
+  padding: 20px;
+  margin-top:20px;
+  position: static;
+}
+
+.s_popup {
+  height: 50%;
+  width: 50%;
+  margin-top: 200px;
+}
+
+.s_content {
+  height:100%;
+  width:100%;
+}
+
+.s_popimg {
+  margin: auto;
+  margin-top: 3%;
+  margin-left: 7%;
+  max-height: 80%;
+  max-width: 80%;
+  position: absolute;
+}
+
 
 
 /* .s_h1 {

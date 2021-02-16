@@ -2,10 +2,11 @@
 {% load static %}
 {% block about_ksa %}
 
-    <div>
+    <div class="logo_title">
         <!-- Fist page  -->
-        <div class="a_firstPage" style="background: url({%static '/image/firstBackground.png' %})">
-            
+        <div class="a_firstPage" >
+            <img src="{% static '/image/firstBackground.png' %}" alt="heidenlib_background">
+
             <div class="a_homeLogo">
                 <img id="a_logo" src="logo.png" alt="logo">
                 <h1 id="a_KSAshort">KSA</h1>
@@ -13,11 +14,13 @@
             </div>
 
             <div class="a_icon">
-                <a href="https://www.instagram.com/asu_ksa/?hl=en"><img src="{%static '/image/instagram.png' %}" alt="instaLogo" style="width:37px;height:35px;padding-right:7px;"></a>
-                <a href="https://www.facebook.com/AZKoreanAssociation"><img src="{%static '/image/facebook.png' %}" alt="faceLogo" style="width:37px;height:35px;padding-left:7px;"></a>
+                <a href="https://www.instagram.com/asu_ksa/?hl=en"><img src="" alt="instaLogo" style="width:37px;height:35px;padding-right:7px;"></a>
+                <a href="https://www.facebook.com/AZKoreanAssociation"><img src="{% static '/image/instagram.png' %}c '/image/facebook.png' %}" alt="faceLogo" style="width:37px;height:35px;padding-left:7px;"></a>
             </div>
         </div>
+    </div>
         <!-- About KSA -->
+    <div class="about_ksa" id="about_ksa">
         <div class="a_container">
             <div class="a_content1">
                 <img id="a_koFlag" style="width:9%;" src="{%static '/image/korea.png' %}" alt="koFlag">

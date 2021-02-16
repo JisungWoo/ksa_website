@@ -1,8 +1,10 @@
 {% extends "picture.html" %}
 {% load static %}
 {% block members %}
-    <div>
-        <div class="m_background">  </div>
+    <div class='members', id='members'>
+        <img src = "{% static '/image/members_palm_tree.png' %}" alt = "background" class="m_background1">
+
+        <div class="m_background2"> </div>
         
         <div class="m_box1">
             <h1 class="m_h1">E-board Members</h1>
@@ -12,7 +14,7 @@
                 <div class = "m_container">
                     <div class="m_human">
 
-                        <a href="#popup1"><img src = "{% static '/image/KakaoTalk_20201121_182050954.jpg' %}" alt = "Jeongwoo Kim - 김정우" class="m_image"> </a>
+                        <a href="#popup1"><img src = "{% static '/image/m_정우.jpg' %}" alt = "Jeongwoo Kim - 김정우" class="m_image"> </a>
                         <h3 class="m_h4"><br/>Jeongwoo Kim - 김정우</h3>
                         <h3 class="m_h3">President<br/><br/></h3>
                                 
@@ -30,7 +32,7 @@
                 <div class = "m_container">
                     <div class="m_human">
                         
-                        <a href="#popup2"><img src = "{% static '/image/KakaoTalk_20201121_182050954.jpg' %}"
+                        <a href="#popup2"><img src = "{% static '/image/m_서현.jpg' %}"
                         alt = "Cindy Lee - 이서현" class="m_image"></a>
                         <h3 class="m_h4"><br/>Cindy Lee - 이서현</h3>
                         <h3 class="m_h3">Vice President<br/><br/></h3>
@@ -49,18 +51,17 @@
 
                 <div class = "m_container">
                     <div class="m_human">
-
-                        <a href="#popup3"><img src = "{% static '/image/KakaoTalk_20201121_182050954.jpg' %}"
-                        alt = "바꾸기" class="m_image"> </a>
-                        <h3 class="m_h4"><br/> Hello - 홍길동</h3>
-                        <h3 class="m_h3">President<br/><br/></h3>
+                        <a href="#popup3"><img src = "{% static '/image/m_민정.jpg' %}"
+                        alt = "Minjeong Kim - 김민정" class="m_image"> </a>
+                        <h3 class="m_h4"><br/> Minjeong Kim - 김민정</h3>
+                        <h3 class="m_h3">Marketing Manager<br/><br/></h3>
                                     
                         <div class="m_box2" > 
-                            <a href="https://www.instagram.com/jaden_jw_kim/"> <img src="data:image/svg+xml;base64,PHN2ZyBpZD0iQm9sZCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMjQgMjQiIGhlaWdodD0iNTEyIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSI1MTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0ibTEyLjAwNCA1LjgzOGMtMy40MDMgMC02LjE1OCAyLjc1OC02LjE1OCA2LjE1OCAwIDMuNDAzIDIuNzU4IDYuMTU4IDYuMTU4IDYuMTU4IDMuNDAzIDAgNi4xNTgtMi43NTggNi4xNTgtNi4xNTggMC0zLjQwMy0yLjc1OC02LjE1OC02LjE1OC02LjE1OHptMCAxMC4xNTVjLTIuMjA5IDAtMy45OTctMS43ODktMy45OTctMy45OTdzMS43ODktMy45OTcgMy45OTctMy45OTcgMy45OTcgMS43ODkgMy45OTcgMy45OTdjLjAwMSAyLjIwOC0xLjc4OCAzLjk5Ny0zLjk5NyAzLjk5N3oiLz48cGF0aCBkPSJtMTYuOTQ4LjA3NmMtMi4yMDgtLjEwMy03LjY3Ny0uMDk4LTkuODg3IDAtMS45NDIuMDkxLTMuNjU1LjU2LTUuMDM2IDEuOTQxLTIuMzA4IDIuMzA4LTIuMDEzIDUuNDE4LTIuMDEzIDkuOTc5IDAgNC42NjgtLjI2IDcuNzA2IDIuMDEzIDkuOTc5IDIuMzE3IDIuMzE2IDUuNDcyIDIuMDEzIDkuOTc5IDIuMDEzIDQuNjI0IDAgNi4yMi4wMDMgNy44NTUtLjYzIDIuMjIzLS44NjMgMy45MDEtMi44NSA0LjA2NS02LjQxOS4xMDQtMi4yMDkuMDk4LTcuNjc3IDAtOS44ODctLjE5OC00LjIxMy0yLjQ1OS02Ljc2OC02Ljk3Ni02Ljk3NnptMy40OTUgMjAuMzcyYy0xLjUxMyAxLjUxMy0zLjYxMiAxLjM3OC04LjQ2OCAxLjM3OC01IDAtNy4wMDUuMDc0LTguNDY4LTEuMzkzLTEuNjg1LTEuNjc3LTEuMzgtNC4zNy0xLjM4LTguNDUzIDAtNS41MjUtLjU2Ny05LjUwNCA0Ljk3OC05Ljc4OCAxLjI3NC0uMDQ1IDEuNjQ5LS4wNiA0Ljg1Ni0uMDZsLjA0NS4wM2M1LjMyOSAwIDkuNTEtLjU1OCA5Ljc2MSA0Ljk4Ni4wNTcgMS4yNjUuMDcgMS42NDUuMDcgNC44NDctLjAwMSA0Ljk0Mi4wOTMgNi45NTktMS4zOTQgOC40NTN6Ii8+PGNpcmNsZSBjeD0iMTguNDA2IiBjeT0iNS41OTUiIHI9IjEuNDM5Ii8+PC9zdmc+" 
+                            <a href="https://www.instagram.com/minjony/"> <img src="data:image/svg+xml;base64,PHN2ZyBpZD0iQm9sZCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMjQgMjQiIGhlaWdodD0iNTEyIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSI1MTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0ibTEyLjAwNCA1LjgzOGMtMy40MDMgMC02LjE1OCAyLjc1OC02LjE1OCA2LjE1OCAwIDMuNDAzIDIuNzU4IDYuMTU4IDYuMTU4IDYuMTU4IDMuNDAzIDAgNi4xNTgtMi43NTggNi4xNTgtNi4xNTggMC0zLjQwMy0yLjc1OC02LjE1OC02LjE1OC02LjE1OHptMCAxMC4xNTVjLTIuMjA5IDAtMy45OTctMS43ODktMy45OTctMy45OTdzMS43ODktMy45OTcgMy45OTctMy45OTcgMy45OTcgMS43ODkgMy45OTcgMy45OTdjLjAwMSAyLjIwOC0xLjc4OCAzLjk5Ny0zLjk5NyAzLjk5N3oiLz48cGF0aCBkPSJtMTYuOTQ4LjA3NmMtMi4yMDgtLjEwMy03LjY3Ny0uMDk4LTkuODg3IDAtMS45NDIuMDkxLTMuNjU1LjU2LTUuMDM2IDEuOTQxLTIuMzA4IDIuMzA4LTIuMDEzIDUuNDE4LTIuMDEzIDkuOTc5IDAgNC42NjgtLjI2IDcuNzA2IDIuMDEzIDkuOTc5IDIuMzE3IDIuMzE2IDUuNDcyIDIuMDEzIDkuOTc5IDIuMDEzIDQuNjI0IDAgNi4yMi4wMDMgNy44NTUtLjYzIDIuMjIzLS44NjMgMy45MDEtMi44NSA0LjA2NS02LjQxOS4xMDQtMi4yMDkuMDk4LTcuNjc3IDAtOS44ODctLjE5OC00LjIxMy0yLjQ1OS02Ljc2OC02Ljk3Ni02Ljk3NnptMy40OTUgMjAuMzcyYy0xLjUxMyAxLjUxMy0zLjYxMiAxLjM3OC04LjQ2OCAxLjM3OC01IDAtNy4wMDUuMDc0LTguNDY4LTEuMzkzLTEuNjg1LTEuNjc3LTEuMzgtNC4zNy0xLjM4LTguNDUzIDAtNS41MjUtLjU2Ny05LjUwNCA0Ljk3OC05Ljc4OCAxLjI3NC0uMDQ1IDEuNjQ5LS4wNiA0Ljg1Ni0uMDZsLjA0NS4wM2M1LjMyOSAwIDkuNTEtLjU1OCA5Ljc2MSA0Ljk4Ni4wNTcgMS4yNjUuMDcgMS42NDUuMDcgNC44NDctLjAwMSA0Ljk0Mi4wOTMgNi45NTktMS4zOTQgOC40NTN6Ii8+PGNpcmNsZSBjeD0iMTguNDA2IiBjeT0iNS41OTUiIHI9IjEuNDM5Ii8+PC9zdmc+" 
                             class= "m_SNS"/> </a>
-                            <a href="https://www.facebook.com/jeongwoo19"> <img src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjUxMnB0IiB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgd2lkdGg9IjUxMnB0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Im00NTIgMGgtMzkyYy0zMy4wODU5MzggMC02MCAyNi45MTQwNjItNjAgNjB2MzkyYzAgMzMuMDg1OTM4IDI2LjkxNDA2MiA2MCA2MCA2MGgzOTJjMzMuMDg1OTM4IDAgNjAtMjYuOTE0MDYyIDYwLTYwdi0zOTJjMC0zMy4wODU5MzgtMjYuOTE0MDYyLTYwLTYwLTYwem0yMCA0NTJjMCAxMS4wMjczNDQtOC45NzI2NTYgMjAtMjAgMjBoLTExOHYtMTQ2aDY0LjAyNzM0NGw3LjQ2MDkzNy02MmgtNzEuNDg4Mjgxdi02N2MwLTE3LjEwMTU2MiAxMi44OTg0MzgtMzAgMzAtMzBoNDV2LTU4Yy0xMS44NDM3NS0xLjY3MTg3NS0zNC42OTE0MDYtNC00NS00LTIzLjMyNDIxOSAwLTQ2LjcwMzEyNSA5LjgzOTg0NC02NC4xNDA2MjUgMjYuOTkyMTg4LTE3Ljk2NDg0NCAxNy42NzE4NzQtMjcuODU5Mzc1IDQwLjgyMDMxMi0yNy44NTkzNzUgNjUuMTgzNTkzdjY2LjgyNDIxOWgtNjV2NjJoNjV2MTQ2aC0yMTJjLTExLjAyNzM0NCAwLTIwLTguOTcyNjU2LTIwLTIwdi0zOTJjMC0xMS4wMjczNDQgOC45NzI2NTYtMjAgMjAtMjBoMzkyYzExLjAyNzM0NCAwIDIwIDguOTcyNjU2IDIwIDIwem0wIDAiLz48L3N2Zz4=" 
+                            <a href="https://www.facebook.com/minjonyy"> <img src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjUxMnB0IiB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgd2lkdGg9IjUxMnB0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Im00NTIgMGgtMzkyYy0zMy4wODU5MzggMC02MCAyNi45MTQwNjItNjAgNjB2MzkyYzAgMzMuMDg1OTM4IDI2LjkxNDA2MiA2MCA2MCA2MGgzOTJjMzMuMDg1OTM4IDAgNjAtMjYuOTE0MDYyIDYwLTYwdi0zOTJjMC0zMy4wODU5MzgtMjYuOTE0MDYyLTYwLTYwLTYwem0yMCA0NTJjMCAxMS4wMjczNDQtOC45NzI2NTYgMjAtMjAgMjBoLTExOHYtMTQ2aDY0LjAyNzM0NGw3LjQ2MDkzNy02MmgtNzEuNDg4Mjgxdi02N2MwLTE3LjEwMTU2MiAxMi44OTg0MzgtMzAgMzAtMzBoNDV2LTU4Yy0xMS44NDM3NS0xLjY3MTg3NS0zNC42OTE0MDYtNC00NS00LTIzLjMyNDIxOSAwLTQ2LjcwMzEyNSA5LjgzOTg0NC02NC4xNDA2MjUgMjYuOTkyMTg4LTE3Ljk2NDg0NCAxNy42NzE4NzQtMjcuODU5Mzc1IDQwLjgyMDMxMi0yNy44NTkzNzUgNjUuMTgzNTkzdjY2LjgyNDIxOWgtNjV2NjJoNjV2MTQ2aC0yMTJjLTExLjAyNzM0NCAwLTIwLTguOTcyNjU2LTIwLTIwdi0zOTJjMC0xMS4wMjczNDQgOC45NzI2NTYtMjAgMjAtMjBoMzkyYzExLjAyNzM0NCAwIDIwIDguOTcyNjU2IDIwIDIwem0wIDAiLz48L3N2Zz4=" 
                             class= "m_SNS"/> </a>
-                            <a href="mailto:jkim569@asu.edu"> <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE4LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgdmlld0JveD0iMCAwIDI1MC41NyAyNTAuNTciIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDI1MC41NyAyNTAuNTc7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGQ9Ik0yMy4wMzIsMjIwLjI4NWgyMDQuNTA2YzEyLjcsMCwyMy4wMzItMTAuMzMzLDIzLjAzMi0yMy4wMzRWNTMuMzE4YzAtMTIuNzAxLTEwLjMzMi0yMy4wMzMtMjMuMDMyLTIzLjAzM0gyMy4wMzINCglDMTAuMzMyLDMwLjI4NSwwLDQwLjYxOCwwLDUzLjMxOHYxNDMuOTMzQzAsMjA5Ljk1MiwxMC4zMzIsMjIwLjI4NSwyMy4wMzIsMjIwLjI4NXogTTE1LDUzLjMxOGMwLTQuNDM2LDMuNjAxLTguMDMzLDguMDMyLTguMDMzDQoJaDIwNC41MDZjNC40MzMsMCw4LjAzMiwzLjU5Nyw4LjAzMiw4LjAzM3YxNDMuOTMzYzAsNC40MzctMy42LDguMDM0LTguMDMyLDguMDM0SDIzLjAzMmMtNC40MzIsMC04LjAzMi0zLjU5Ny04LjAzMi04LjAzNFY1My4zMTh6DQoJIE00NC43MzgsMTk0LjY3N2gtMTVWNTYuNTI5bDkzLjY3NCw2MC44MTVjMS4xMDIsMC43MTUsMi42NDMsMC43MTYsMy43NDgtMC4wMDJsOTMuNjczLTYwLjgxM3YxMzguMTQ4aC0xNVY4NC4xNTFsLTcwLjUwNyw0NS43NzQNCgljLTIuOTkyLDEuOTQxLTYuNDY0LDIuOTY2LTEwLjA0MSwyLjk2NnMtNy4wNDktMS4wMjUtMTAuMDM5LTIuOTY1TDQ0LjczOCw4NC4xNTFWMTk0LjY3N3oiLz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjwvc3ZnPg0K" 
+                            <a href="mailto:mkim226@asu.edu"> <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE4LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgdmlld0JveD0iMCAwIDI1MC41NyAyNTAuNTciIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDI1MC41NyAyNTAuNTc7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGQ9Ik0yMy4wMzIsMjIwLjI4NWgyMDQuNTA2YzEyLjcsMCwyMy4wMzItMTAuMzMzLDIzLjAzMi0yMy4wMzRWNTMuMzE4YzAtMTIuNzAxLTEwLjMzMi0yMy4wMzMtMjMuMDMyLTIzLjAzM0gyMy4wMzINCglDMTAuMzMyLDMwLjI4NSwwLDQwLjYxOCwwLDUzLjMxOHYxNDMuOTMzQzAsMjA5Ljk1MiwxMC4zMzIsMjIwLjI4NSwyMy4wMzIsMjIwLjI4NXogTTE1LDUzLjMxOGMwLTQuNDM2LDMuNjAxLTguMDMzLDguMDMyLTguMDMzDQoJaDIwNC41MDZjNC40MzMsMCw4LjAzMiwzLjU5Nyw4LjAzMiw4LjAzM3YxNDMuOTMzYzAsNC40MzctMy42LDguMDM0LTguMDMyLDguMDM0SDIzLjAzMmMtNC40MzIsMC04LjAzMi0zLjU5Ny04LjAzMi04LjAzNFY1My4zMTh6DQoJIE00NC43MzgsMTk0LjY3N2gtMTVWNTYuNTI5bDkzLjY3NCw2MC44MTVjMS4xMDIsMC43MTUsMi42NDMsMC43MTYsMy43NDgtMC4wMDJsOTMuNjczLTYwLjgxM3YxMzguMTQ4aC0xNVY4NC4xNTFsLTcwLjUwNyw0NS43NzQNCgljLTIuOTkyLDEuOTQxLTYuNDY0LDIuOTY2LTEwLjA0MSwyLjk2NnMtNy4wNDktMS4wMjUtMTAuMDM5LTIuOTY1TDQ0LjczOCw4NC4xNTFWMTk0LjY3N3oiLz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjwvc3ZnPg0K" 
                             class= "m_SNS"/> </a>
                         </div>
                     </div>
@@ -70,17 +71,17 @@
                 <div class = "m_container">
                     <div class="m_human">
 
-                        <a href="#popup4"><img src = "{% static '/image/KakaoTalk_20201121_182050954.jpg' %}" 
-                        alt = "바꾸기" class="m_image"> </a>
-                        <h3 class="m_h4"><br/> Hello - 홍길동1</h3>
-                        <h3 class="m_h3">President<br/><br/></h3>
+                        <a href="#popup4"><img src = "{% static '/image/m_은호.jpg' %}" 
+                        alt = "Eunho Jo - 조은호" class="m_image"> </a>
+                        <h3 class="m_h4"><br/> Eunho Jo - 조은호</h3>
+                        <h3 class="m_h3">Treasurer<br/><br/></h3>
                                     
                         <div class="m_box2" > 
-                            <a href="https://www.instagram.com/jaden_jw_kim/"> <img src="data:image/svg+xml;base64,PHN2ZyBpZD0iQm9sZCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMjQgMjQiIGhlaWdodD0iNTEyIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSI1MTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0ibTEyLjAwNCA1LjgzOGMtMy40MDMgMC02LjE1OCAyLjc1OC02LjE1OCA2LjE1OCAwIDMuNDAzIDIuNzU4IDYuMTU4IDYuMTU4IDYuMTU4IDMuNDAzIDAgNi4xNTgtMi43NTggNi4xNTgtNi4xNTggMC0zLjQwMy0yLjc1OC02LjE1OC02LjE1OC02LjE1OHptMCAxMC4xNTVjLTIuMjA5IDAtMy45OTctMS43ODktMy45OTctMy45OTdzMS43ODktMy45OTcgMy45OTctMy45OTcgMy45OTcgMS43ODkgMy45OTcgMy45OTdjLjAwMSAyLjIwOC0xLjc4OCAzLjk5Ny0zLjk5NyAzLjk5N3oiLz48cGF0aCBkPSJtMTYuOTQ4LjA3NmMtMi4yMDgtLjEwMy03LjY3Ny0uMDk4LTkuODg3IDAtMS45NDIuMDkxLTMuNjU1LjU2LTUuMDM2IDEuOTQxLTIuMzA4IDIuMzA4LTIuMDEzIDUuNDE4LTIuMDEzIDkuOTc5IDAgNC42NjgtLjI2IDcuNzA2IDIuMDEzIDkuOTc5IDIuMzE3IDIuMzE2IDUuNDcyIDIuMDEzIDkuOTc5IDIuMDEzIDQuNjI0IDAgNi4yMi4wMDMgNy44NTUtLjYzIDIuMjIzLS44NjMgMy45MDEtMi44NSA0LjA2NS02LjQxOS4xMDQtMi4yMDkuMDk4LTcuNjc3IDAtOS44ODctLjE5OC00LjIxMy0yLjQ1OS02Ljc2OC02Ljk3Ni02Ljk3NnptMy40OTUgMjAuMzcyYy0xLjUxMyAxLjUxMy0zLjYxMiAxLjM3OC04LjQ2OCAxLjM3OC01IDAtNy4wMDUuMDc0LTguNDY4LTEuMzkzLTEuNjg1LTEuNjc3LTEuMzgtNC4zNy0xLjM4LTguNDUzIDAtNS41MjUtLjU2Ny05LjUwNCA0Ljk3OC05Ljc4OCAxLjI3NC0uMDQ1IDEuNjQ5LS4wNiA0Ljg1Ni0uMDZsLjA0NS4wM2M1LjMyOSAwIDkuNTEtLjU1OCA5Ljc2MSA0Ljk4Ni4wNTcgMS4yNjUuMDcgMS42NDUuMDcgNC44NDctLjAwMSA0Ljk0Mi4wOTMgNi45NTktMS4zOTQgOC40NTN6Ii8+PGNpcmNsZSBjeD0iMTguNDA2IiBjeT0iNS41OTUiIHI9IjEuNDM5Ii8+PC9zdmc+" 
+                            <a href="https://www.instagram.com/eunho.dos.tres/"> <img src="data:image/svg+xml;base64,PHN2ZyBpZD0iQm9sZCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMjQgMjQiIGhlaWdodD0iNTEyIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSI1MTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0ibTEyLjAwNCA1LjgzOGMtMy40MDMgMC02LjE1OCAyLjc1OC02LjE1OCA2LjE1OCAwIDMuNDAzIDIuNzU4IDYuMTU4IDYuMTU4IDYuMTU4IDMuNDAzIDAgNi4xNTgtMi43NTggNi4xNTgtNi4xNTggMC0zLjQwMy0yLjc1OC02LjE1OC02LjE1OC02LjE1OHptMCAxMC4xNTVjLTIuMjA5IDAtMy45OTctMS43ODktMy45OTctMy45OTdzMS43ODktMy45OTcgMy45OTctMy45OTcgMy45OTcgMS43ODkgMy45OTcgMy45OTdjLjAwMSAyLjIwOC0xLjc4OCAzLjk5Ny0zLjk5NyAzLjk5N3oiLz48cGF0aCBkPSJtMTYuOTQ4LjA3NmMtMi4yMDgtLjEwMy03LjY3Ny0uMDk4LTkuODg3IDAtMS45NDIuMDkxLTMuNjU1LjU2LTUuMDM2IDEuOTQxLTIuMzA4IDIuMzA4LTIuMDEzIDUuNDE4LTIuMDEzIDkuOTc5IDAgNC42NjgtLjI2IDcuNzA2IDIuMDEzIDkuOTc5IDIuMzE3IDIuMzE2IDUuNDcyIDIuMDEzIDkuOTc5IDIuMDEzIDQuNjI0IDAgNi4yMi4wMDMgNy44NTUtLjYzIDIuMjIzLS44NjMgMy45MDEtMi44NSA0LjA2NS02LjQxOS4xMDQtMi4yMDkuMDk4LTcuNjc3IDAtOS44ODctLjE5OC00LjIxMy0yLjQ1OS02Ljc2OC02Ljk3Ni02Ljk3NnptMy40OTUgMjAuMzcyYy0xLjUxMyAxLjUxMy0zLjYxMiAxLjM3OC04LjQ2OCAxLjM3OC01IDAtNy4wMDUuMDc0LTguNDY4LTEuMzkzLTEuNjg1LTEuNjc3LTEuMzgtNC4zNy0xLjM4LTguNDUzIDAtNS41MjUtLjU2Ny05LjUwNCA0Ljk3OC05Ljc4OCAxLjI3NC0uMDQ1IDEuNjQ5LS4wNiA0Ljg1Ni0uMDZsLjA0NS4wM2M1LjMyOSAwIDkuNTEtLjU1OCA5Ljc2MSA0Ljk4Ni4wNTcgMS4yNjUuMDcgMS42NDUuMDcgNC44NDctLjAwMSA0Ljk0Mi4wOTMgNi45NTktMS4zOTQgOC40NTN6Ii8+PGNpcmNsZSBjeD0iMTguNDA2IiBjeT0iNS41OTUiIHI9IjEuNDM5Ii8+PC9zdmc+" 
                             class= "m_SNS"/> </a>
-                            <a href="https://www.facebook.com/jeongwoo19"> <img src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjUxMnB0IiB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgd2lkdGg9IjUxMnB0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Im00NTIgMGgtMzkyYy0zMy4wODU5MzggMC02MCAyNi45MTQwNjItNjAgNjB2MzkyYzAgMzMuMDg1OTM4IDI2LjkxNDA2MiA2MCA2MCA2MGgzOTJjMzMuMDg1OTM4IDAgNjAtMjYuOTE0MDYyIDYwLTYwdi0zOTJjMC0zMy4wODU5MzgtMjYuOTE0MDYyLTYwLTYwLTYwem0yMCA0NTJjMCAxMS4wMjczNDQtOC45NzI2NTYgMjAtMjAgMjBoLTExOHYtMTQ2aDY0LjAyNzM0NGw3LjQ2MDkzNy02MmgtNzEuNDg4Mjgxdi02N2MwLTE3LjEwMTU2MiAxMi44OTg0MzgtMzAgMzAtMzBoNDV2LTU4Yy0xMS44NDM3NS0xLjY3MTg3NS0zNC42OTE0MDYtNC00NS00LTIzLjMyNDIxOSAwLTQ2LjcwMzEyNSA5LjgzOTg0NC02NC4xNDA2MjUgMjYuOTkyMTg4LTE3Ljk2NDg0NCAxNy42NzE4NzQtMjcuODU5Mzc1IDQwLjgyMDMxMi0yNy44NTkzNzUgNjUuMTgzNTkzdjY2LjgyNDIxOWgtNjV2NjJoNjV2MTQ2aC0yMTJjLTExLjAyNzM0NCAwLTIwLTguOTcyNjU2LTIwLTIwdi0zOTJjMC0xMS4wMjczNDQgOC45NzI2NTYtMjAgMjAtMjBoMzkyYzExLjAyNzM0NCAwIDIwIDguOTcyNjU2IDIwIDIwem0wIDAiLz48L3N2Zz4=" 
+                            <a href="https://www.facebook.com/0718joeunho"> <img src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjUxMnB0IiB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgd2lkdGg9IjUxMnB0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Im00NTIgMGgtMzkyYy0zMy4wODU5MzggMC02MCAyNi45MTQwNjItNjAgNjB2MzkyYzAgMzMuMDg1OTM4IDI2LjkxNDA2MiA2MCA2MCA2MGgzOTJjMzMuMDg1OTM4IDAgNjAtMjYuOTE0MDYyIDYwLTYwdi0zOTJjMC0zMy4wODU5MzgtMjYuOTE0MDYyLTYwLTYwLTYwem0yMCA0NTJjMCAxMS4wMjczNDQtOC45NzI2NTYgMjAtMjAgMjBoLTExOHYtMTQ2aDY0LjAyNzM0NGw3LjQ2MDkzNy02MmgtNzEuNDg4Mjgxdi02N2MwLTE3LjEwMTU2MiAxMi44OTg0MzgtMzAgMzAtMzBoNDV2LTU4Yy0xMS44NDM3NS0xLjY3MTg3NS0zNC42OTE0MDYtNC00NS00LTIzLjMyNDIxOSAwLTQ2LjcwMzEyNSA5LjgzOTg0NC02NC4xNDA2MjUgMjYuOTkyMTg4LTE3Ljk2NDg0NCAxNy42NzE4NzQtMjcuODU5Mzc1IDQwLjgyMDMxMi0yNy44NTkzNzUgNjUuMTgzNTkzdjY2LjgyNDIxOWgtNjV2NjJoNjV2MTQ2aC0yMTJjLTExLjAyNzM0NCAwLTIwLTguOTcyNjU2LTIwLTIwdi0zOTJjMC0xMS4wMjczNDQgOC45NzI2NTYtMjAgMjAtMjBoMzkyYzExLjAyNzM0NCAwIDIwIDguOTcyNjU2IDIwIDIwem0wIDAiLz48L3N2Zz4=" 
                             class= "m_SNS"/> </a>
-                            <a href="mailto:jkim569@asu.edu"> <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE4LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgdmlld0JveD0iMCAwIDI1MC41NyAyNTAuNTciIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDI1MC41NyAyNTAuNTc7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGQ9Ik0yMy4wMzIsMjIwLjI4NWgyMDQuNTA2YzEyLjcsMCwyMy4wMzItMTAuMzMzLDIzLjAzMi0yMy4wMzRWNTMuMzE4YzAtMTIuNzAxLTEwLjMzMi0yMy4wMzMtMjMuMDMyLTIzLjAzM0gyMy4wMzINCglDMTAuMzMyLDMwLjI4NSwwLDQwLjYxOCwwLDUzLjMxOHYxNDMuOTMzQzAsMjA5Ljk1MiwxMC4zMzIsMjIwLjI4NSwyMy4wMzIsMjIwLjI4NXogTTE1LDUzLjMxOGMwLTQuNDM2LDMuNjAxLTguMDMzLDguMDMyLTguMDMzDQoJaDIwNC41MDZjNC40MzMsMCw4LjAzMiwzLjU5Nyw4LjAzMiw4LjAzM3YxNDMuOTMzYzAsNC40MzctMy42LDguMDM0LTguMDMyLDguMDM0SDIzLjAzMmMtNC40MzIsMC04LjAzMi0zLjU5Ny04LjAzMi04LjAzNFY1My4zMTh6DQoJIE00NC43MzgsMTk0LjY3N2gtMTVWNTYuNTI5bDkzLjY3NCw2MC44MTVjMS4xMDIsMC43MTUsMi42NDMsMC43MTYsMy43NDgtMC4wMDJsOTMuNjczLTYwLjgxM3YxMzguMTQ4aC0xNVY4NC4xNTFsLTcwLjUwNyw0NS43NzQNCgljLTIuOTkyLDEuOTQxLTYuNDY0LDIuOTY2LTEwLjA0MSwyLjk2NnMtNy4wNDktMS4wMjUtMTAuMDM5LTIuOTY1TDQ0LjczOCw4NC4xNTFWMTk0LjY3N3oiLz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjwvc3ZnPg0K" 
+                            <a href="mailto:eunhojo@asu.edu"> <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE4LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgdmlld0JveD0iMCAwIDI1MC41NyAyNTAuNTciIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDI1MC41NyAyNTAuNTc7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGQ9Ik0yMy4wMzIsMjIwLjI4NWgyMDQuNTA2YzEyLjcsMCwyMy4wMzItMTAuMzMzLDIzLjAzMi0yMy4wMzRWNTMuMzE4YzAtMTIuNzAxLTEwLjMzMi0yMy4wMzMtMjMuMDMyLTIzLjAzM0gyMy4wMzINCglDMTAuMzMyLDMwLjI4NSwwLDQwLjYxOCwwLDUzLjMxOHYxNDMuOTMzQzAsMjA5Ljk1MiwxMC4zMzIsMjIwLjI4NSwyMy4wMzIsMjIwLjI4NXogTTE1LDUzLjMxOGMwLTQuNDM2LDMuNjAxLTguMDMzLDguMDMyLTguMDMzDQoJaDIwNC41MDZjNC40MzMsMCw4LjAzMiwzLjU5Nyw4LjAzMiw4LjAzM3YxNDMuOTMzYzAsNC40MzctMy42LDguMDM0LTguMDMyLDguMDM0SDIzLjAzMmMtNC40MzIsMC04LjAzMi0zLjU5Ny04LjAzMi04LjAzNFY1My4zMTh6DQoJIE00NC43MzgsMTk0LjY3N2gtMTVWNTYuNTI5bDkzLjY3NCw2MC44MTVjMS4xMDIsMC43MTUsMi42NDMsMC43MTYsMy43NDgtMC4wMDJsOTMuNjczLTYwLjgxM3YxMzguMTQ4aC0xNVY4NC4xNTFsLTcwLjUwNyw0NS43NzQNCgljLTIuOTkyLDEuOTQxLTYuNDY0LDIuOTY2LTEwLjA0MSwyLjk2NnMtNy4wNDktMS4wMjUtMTAuMDM5LTIuOTY1TDQ0LjczOCw4NC4xNTFWMTk0LjY3N3oiLz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjwvc3ZnPg0K" 
                             class= "m_SNS"/> </a>
                         </div>
                     </div>
@@ -90,17 +91,17 @@
                 <div class = "m_container">
                     <div class="m_human">
 
-                        <a href="#popup5"><img src = "{% static '/image/KakaoTalk_20201121_182050954.jpg' %}"
-                        alt = "바꾸기" class="m_image"> </a>
-                        <h3 class="m_h4"><br/> Hello - 홍길동</h3>
-                        <h3 class="m_h3">President<br/><br/></h3>
+                        <a href="#popup5"><img src = "{% static '/image/m_규환.jpg' %}"
+                        alt = "Kyuhwan Lyoo - 류규환" class="m_image"> </a>
+                        <h3 class="m_h4"><br/> Kyuhwan Lyoo - 류규환</h3>
+                        <h3 class="m_h3">Event Organizer<br/><br/></h3>
                                     
                         <div class="m_box2" > 
-                            <a href="https://www.instagram.com/jaden_jw_kim/"> <img src="data:image/svg+xml;base64,PHN2ZyBpZD0iQm9sZCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMjQgMjQiIGhlaWdodD0iNTEyIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSI1MTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0ibTEyLjAwNCA1LjgzOGMtMy40MDMgMC02LjE1OCAyLjc1OC02LjE1OCA2LjE1OCAwIDMuNDAzIDIuNzU4IDYuMTU4IDYuMTU4IDYuMTU4IDMuNDAzIDAgNi4xNTgtMi43NTggNi4xNTgtNi4xNTggMC0zLjQwMy0yLjc1OC02LjE1OC02LjE1OC02LjE1OHptMCAxMC4xNTVjLTIuMjA5IDAtMy45OTctMS43ODktMy45OTctMy45OTdzMS43ODktMy45OTcgMy45OTctMy45OTcgMy45OTcgMS43ODkgMy45OTcgMy45OTdjLjAwMSAyLjIwOC0xLjc4OCAzLjk5Ny0zLjk5NyAzLjk5N3oiLz48cGF0aCBkPSJtMTYuOTQ4LjA3NmMtMi4yMDgtLjEwMy03LjY3Ny0uMDk4LTkuODg3IDAtMS45NDIuMDkxLTMuNjU1LjU2LTUuMDM2IDEuOTQxLTIuMzA4IDIuMzA4LTIuMDEzIDUuNDE4LTIuMDEzIDkuOTc5IDAgNC42NjgtLjI2IDcuNzA2IDIuMDEzIDkuOTc5IDIuMzE3IDIuMzE2IDUuNDcyIDIuMDEzIDkuOTc5IDIuMDEzIDQuNjI0IDAgNi4yMi4wMDMgNy44NTUtLjYzIDIuMjIzLS44NjMgMy45MDEtMi44NSA0LjA2NS02LjQxOS4xMDQtMi4yMDkuMDk4LTcuNjc3IDAtOS44ODctLjE5OC00LjIxMy0yLjQ1OS02Ljc2OC02Ljk3Ni02Ljk3NnptMy40OTUgMjAuMzcyYy0xLjUxMyAxLjUxMy0zLjYxMiAxLjM3OC04LjQ2OCAxLjM3OC01IDAtNy4wMDUuMDc0LTguNDY4LTEuMzkzLTEuNjg1LTEuNjc3LTEuMzgtNC4zNy0xLjM4LTguNDUzIDAtNS41MjUtLjU2Ny05LjUwNCA0Ljk3OC05Ljc4OCAxLjI3NC0uMDQ1IDEuNjQ5LS4wNiA0Ljg1Ni0uMDZsLjA0NS4wM2M1LjMyOSAwIDkuNTEtLjU1OCA5Ljc2MSA0Ljk4Ni4wNTcgMS4yNjUuMDcgMS42NDUuMDcgNC44NDctLjAwMSA0Ljk0Mi4wOTMgNi45NTktMS4zOTQgOC40NTN6Ii8+PGNpcmNsZSBjeD0iMTguNDA2IiBjeT0iNS41OTUiIHI9IjEuNDM5Ii8+PC9zdmc+" 
+                            <a href="https://www.instagram.com/kyu._.lyoo/"> <img src="data:image/svg+xml;base64,PHN2ZyBpZD0iQm9sZCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMjQgMjQiIGhlaWdodD0iNTEyIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSI1MTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0ibTEyLjAwNCA1LjgzOGMtMy40MDMgMC02LjE1OCAyLjc1OC02LjE1OCA2LjE1OCAwIDMuNDAzIDIuNzU4IDYuMTU4IDYuMTU4IDYuMTU4IDMuNDAzIDAgNi4xNTgtMi43NTggNi4xNTgtNi4xNTggMC0zLjQwMy0yLjc1OC02LjE1OC02LjE1OC02LjE1OHptMCAxMC4xNTVjLTIuMjA5IDAtMy45OTctMS43ODktMy45OTctMy45OTdzMS43ODktMy45OTcgMy45OTctMy45OTcgMy45OTcgMS43ODkgMy45OTcgMy45OTdjLjAwMSAyLjIwOC0xLjc4OCAzLjk5Ny0zLjk5NyAzLjk5N3oiLz48cGF0aCBkPSJtMTYuOTQ4LjA3NmMtMi4yMDgtLjEwMy03LjY3Ny0uMDk4LTkuODg3IDAtMS45NDIuMDkxLTMuNjU1LjU2LTUuMDM2IDEuOTQxLTIuMzA4IDIuMzA4LTIuMDEzIDUuNDE4LTIuMDEzIDkuOTc5IDAgNC42NjgtLjI2IDcuNzA2IDIuMDEzIDkuOTc5IDIuMzE3IDIuMzE2IDUuNDcyIDIuMDEzIDkuOTc5IDIuMDEzIDQuNjI0IDAgNi4yMi4wMDMgNy44NTUtLjYzIDIuMjIzLS44NjMgMy45MDEtMi44NSA0LjA2NS02LjQxOS4xMDQtMi4yMDkuMDk4LTcuNjc3IDAtOS44ODctLjE5OC00LjIxMy0yLjQ1OS02Ljc2OC02Ljk3Ni02Ljk3NnptMy40OTUgMjAuMzcyYy0xLjUxMyAxLjUxMy0zLjYxMiAxLjM3OC04LjQ2OCAxLjM3OC01IDAtNy4wMDUuMDc0LTguNDY4LTEuMzkzLTEuNjg1LTEuNjc3LTEuMzgtNC4zNy0xLjM4LTguNDUzIDAtNS41MjUtLjU2Ny05LjUwNCA0Ljk3OC05Ljc4OCAxLjI3NC0uMDQ1IDEuNjQ5LS4wNiA0Ljg1Ni0uMDZsLjA0NS4wM2M1LjMyOSAwIDkuNTEtLjU1OCA5Ljc2MSA0Ljk4Ni4wNTcgMS4yNjUuMDcgMS42NDUuMDcgNC44NDctLjAwMSA0Ljk0Mi4wOTMgNi45NTktMS4zOTQgOC40NTN6Ii8+PGNpcmNsZSBjeD0iMTguNDA2IiBjeT0iNS41OTUiIHI9IjEuNDM5Ii8+PC9zdmc+" 
                             class= "m_SNS"/> </a>
-                            <a href="https://www.facebook.com/jeongwoo19"> <img src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjUxMnB0IiB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgd2lkdGg9IjUxMnB0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Im00NTIgMGgtMzkyYy0zMy4wODU5MzggMC02MCAyNi45MTQwNjItNjAgNjB2MzkyYzAgMzMuMDg1OTM4IDI2LjkxNDA2MiA2MCA2MCA2MGgzOTJjMzMuMDg1OTM4IDAgNjAtMjYuOTE0MDYyIDYwLTYwdi0zOTJjMC0zMy4wODU5MzgtMjYuOTE0MDYyLTYwLTYwLTYwem0yMCA0NTJjMCAxMS4wMjczNDQtOC45NzI2NTYgMjAtMjAgMjBoLTExOHYtMTQ2aDY0LjAyNzM0NGw3LjQ2MDkzNy02MmgtNzEuNDg4Mjgxdi02N2MwLTE3LjEwMTU2MiAxMi44OTg0MzgtMzAgMzAtMzBoNDV2LTU4Yy0xMS44NDM3NS0xLjY3MTg3NS0zNC42OTE0MDYtNC00NS00LTIzLjMyNDIxOSAwLTQ2LjcwMzEyNSA5LjgzOTg0NC02NC4xNDA2MjUgMjYuOTkyMTg4LTE3Ljk2NDg0NCAxNy42NzE4NzQtMjcuODU5Mzc1IDQwLjgyMDMxMi0yNy44NTkzNzUgNjUuMTgzNTkzdjY2LjgyNDIxOWgtNjV2NjJoNjV2MTQ2aC0yMTJjLTExLjAyNzM0NCAwLTIwLTguOTcyNjU2LTIwLTIwdi0zOTJjMC0xMS4wMjczNDQgOC45NzI2NTYtMjAgMjAtMjBoMzkyYzExLjAyNzM0NCAwIDIwIDguOTcyNjU2IDIwIDIwem0wIDAiLz48L3N2Zz4=" 
+                            <a href="https://www.facebook.com/profile.php?id=100007262505895"> <img src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjUxMnB0IiB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgd2lkdGg9IjUxMnB0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Im00NTIgMGgtMzkyYy0zMy4wODU5MzggMC02MCAyNi45MTQwNjItNjAgNjB2MzkyYzAgMzMuMDg1OTM4IDI2LjkxNDA2MiA2MCA2MCA2MGgzOTJjMzMuMDg1OTM4IDAgNjAtMjYuOTE0MDYyIDYwLTYwdi0zOTJjMC0zMy4wODU5MzgtMjYuOTE0MDYyLTYwLTYwLTYwem0yMCA0NTJjMCAxMS4wMjczNDQtOC45NzI2NTYgMjAtMjAgMjBoLTExOHYtMTQ2aDY0LjAyNzM0NGw3LjQ2MDkzNy02MmgtNzEuNDg4Mjgxdi02N2MwLTE3LjEwMTU2MiAxMi44OTg0MzgtMzAgMzAtMzBoNDV2LTU4Yy0xMS44NDM3NS0xLjY3MTg3NS0zNC42OTE0MDYtNC00NS00LTIzLjMyNDIxOSAwLTQ2LjcwMzEyNSA5LjgzOTg0NC02NC4xNDA2MjUgMjYuOTkyMTg4LTE3Ljk2NDg0NCAxNy42NzE4NzQtMjcuODU5Mzc1IDQwLjgyMDMxMi0yNy44NTkzNzUgNjUuMTgzNTkzdjY2LjgyNDIxOWgtNjV2NjJoNjV2MTQ2aC0yMTJjLTExLjAyNzM0NCAwLTIwLTguOTcyNjU2LTIwLTIwdi0zOTJjMC0xMS4wMjczNDQgOC45NzI2NTYtMjAgMjAtMjBoMzkyYzExLjAyNzM0NCAwIDIwIDguOTcyNjU2IDIwIDIwem0wIDAiLz48L3N2Zz4=" 
                             class= "m_SNS"/> </a>
-                            <a href="mailto:jkim569@asu.edu"> <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE4LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgdmlld0JveD0iMCAwIDI1MC41NyAyNTAuNTciIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDI1MC41NyAyNTAuNTc7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGQ9Ik0yMy4wMzIsMjIwLjI4NWgyMDQuNTA2YzEyLjcsMCwyMy4wMzItMTAuMzMzLDIzLjAzMi0yMy4wMzRWNTMuMzE4YzAtMTIuNzAxLTEwLjMzMi0yMy4wMzMtMjMuMDMyLTIzLjAzM0gyMy4wMzINCglDMTAuMzMyLDMwLjI4NSwwLDQwLjYxOCwwLDUzLjMxOHYxNDMuOTMzQzAsMjA5Ljk1MiwxMC4zMzIsMjIwLjI4NSwyMy4wMzIsMjIwLjI4NXogTTE1LDUzLjMxOGMwLTQuNDM2LDMuNjAxLTguMDMzLDguMDMyLTguMDMzDQoJaDIwNC41MDZjNC40MzMsMCw4LjAzMiwzLjU5Nyw4LjAzMiw4LjAzM3YxNDMuOTMzYzAsNC40MzctMy42LDguMDM0LTguMDMyLDguMDM0SDIzLjAzMmMtNC40MzIsMC04LjAzMi0zLjU5Ny04LjAzMi04LjAzNFY1My4zMTh6DQoJIE00NC43MzgsMTk0LjY3N2gtMTVWNTYuNTI5bDkzLjY3NCw2MC44MTVjMS4xMDIsMC43MTUsMi42NDMsMC43MTYsMy43NDgtMC4wMDJsOTMuNjczLTYwLjgxM3YxMzguMTQ4aC0xNVY4NC4xNTFsLTcwLjUwNyw0NS43NzQNCgljLTIuOTkyLDEuOTQxLTYuNDY0LDIuOTY2LTEwLjA0MSwyLjk2NnMtNy4wNDktMS4wMjUtMTAuMDM5LTIuOTY1TDQ0LjczOCw4NC4xNTFWMTk0LjY3N3oiLz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjwvc3ZnPg0K" 
+                            <a href="mailto:klyoo1@asu.edu"> <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE4LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgdmlld0JveD0iMCAwIDI1MC41NyAyNTAuNTciIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDI1MC41NyAyNTAuNTc7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGQ9Ik0yMy4wMzIsMjIwLjI4NWgyMDQuNTA2YzEyLjcsMCwyMy4wMzItMTAuMzMzLDIzLjAzMi0yMy4wMzRWNTMuMzE4YzAtMTIuNzAxLTEwLjMzMi0yMy4wMzMtMjMuMDMyLTIzLjAzM0gyMy4wMzINCglDMTAuMzMyLDMwLjI4NSwwLDQwLjYxOCwwLDUzLjMxOHYxNDMuOTMzQzAsMjA5Ljk1MiwxMC4zMzIsMjIwLjI4NSwyMy4wMzIsMjIwLjI4NXogTTE1LDUzLjMxOGMwLTQuNDM2LDMuNjAxLTguMDMzLDguMDMyLTguMDMzDQoJaDIwNC41MDZjNC40MzMsMCw4LjAzMiwzLjU5Nyw4LjAzMiw4LjAzM3YxNDMuOTMzYzAsNC40MzctMy42LDguMDM0LTguMDMyLDguMDM0SDIzLjAzMmMtNC40MzIsMC04LjAzMi0zLjU5Ny04LjAzMi04LjAzNFY1My4zMTh6DQoJIE00NC43MzgsMTk0LjY3N2gtMTVWNTYuNTI5bDkzLjY3NCw2MC44MTVjMS4xMDIsMC43MTUsMi42NDMsMC43MTYsMy43NDgtMC4wMDJsOTMuNjczLTYwLjgxM3YxMzguMTQ4aC0xNVY4NC4xNTFsLTcwLjUwNyw0NS43NzQNCgljLTIuOTkyLDEuOTQxLTYuNDY0LDIuOTY2LTEwLjA0MSwyLjk2NnMtNy4wNDktMS4wMjUtMTAuMDM5LTIuOTY1TDQ0LjczOCw4NC4xNTFWMTk0LjY3N3oiLz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjwvc3ZnPg0K" 
                             class= "m_SNS"/> </a>
                         </div>
                     </div>
@@ -136,14 +137,14 @@
                 <div class="popup">
                 <br/>
                     <a class = "m_h7">   PRESIDENT<br/></a>
-                    <a class ="close" href="#">&times;</a>
+                    <a class ="close" href="#members">&times;</a>
                     <div class ="content">
-                        <img src = "{% static '/image/KakaoTalk_20201121_182050954.jpg' %}" alt = "Jeongwoo Kim - 김정우" class = "m_popimg" >
+                        <img src = "{% static '/image/m_정우.jpg' %}" alt = "Jeongwoo Kim - 김정우" class = "m_popimg" >
 
                         <div class = "m_popcont">
                             <a class = "m_h8"> Jeongwoo Kim - </a> <a class = "m_h9" >김정우 <br/><br/> </a>
                             <a class = "m_h6" >Major: </a> <a class= "m_h5" >Psychology <br/> <a class= "m_h6">Year in school: </a> <a class= "m_h5" >Sophomore <br/> <a class= "m_h6">Hometown: </a> <a class= "m_h5" >Cheongju, Korea</a>
-                            <a class = "m_h6" ><br/><br/>"Don't dream it, be it"</a>  
+                            <a class = "m_h6" ><br/><br/>"Ask and it will be given to you; seek and you will find; knock and the door will be opened to you."</a>  
                         </div>
                     </div>
                 </div>
@@ -157,12 +158,13 @@
                     <a class= "m_h7">VICE PRESIDENT<br/></a>
                     <a class="close" href="#">&times;</a>
                     <div class="content">
-                        <img src = "{% static '/image/KakaoTalk_20201121_182050954.jpg' %}" alt = "Jeongwoo Kim - 김정우" class = "m_popimg" >
+                        <img src = "{% static '/image/m_서현.jpg' %}" alt = "Cindy Lee - 이서현" class = "m_popimg" >
                         
                         <div class = "m_popcont">    
                             <a class= "m_h8"> Cindy Lee - </a> <a class = "m_h9" >이서현 <br/><br/> </a>
                             <a class = "m_h6" >Major: </a> <a class= "m_h5" >Marketing, Computer Information System <br/> <a class= "m_h6">Year in school: </a> <a class= "m_h5" >Sophomore <br/> <a class= "m_h6">Hometown: </a> <a class= "m_h5" >Seoul, Korea</a>
-                            <a class = "m_h6" ><br/><br/>"Better late than never"</a> 
+                            
+                            <a class = "m_h6" ><br/><br/>"Only i can change my life. No one can do it for me."</a> 
                         </div>
                 </div>
             </div>
@@ -172,15 +174,15 @@
             <div id="popup3" class="overlay">
                 <div class="popup">
                 <br/>
-                    <a class = "m_h7">   PRESIDENT<br/></a>
+                    <a class = "m_h7">Marketing Manager<br/></a>
                     <a class ="close" href="#">&times;</a>
                     <div class ="content">
-                        <img src = "{% static '/image/KakaoTalk_20201121_182050954.jpg' %}" alt = "Jeongwoo Kim - 김정우" class = "m_popimg" >
+                        <img src = "{% static '/image/m_민정.jpg' %}" alt = "Minjeong Kim - 김민정" class = "m_popimg" >
 
                         <div class = "m_popcont">
-                            <a class = "m_h8"> Jeongwoo Kim - </a> <a class = "m_h9" >김정우 <br/><br/> </a>
-                            <a class = "m_h6" >Major: </a> <a class= "m_h5" >Psychology <br/> <a class= "m_h6">Year in school: </a> <a class= "m_h5" >Sophomore <br/> <a class= "m_h6">Hometown: </a> <a class= "m_h5" >Cheongju, Korea</a>
-                            <a class = "m_h6" ><br/><br/>"Don't dream it, be it"</a>  
+                            <a class = "m_h8"> Minjeong Kim - </a> <a class = "m_h9" >김민정 <br/><br/> </a>
+                            <a class = "m_h6" >Major: </a> <a class= "m_h5" >Film and Media Production <br/> <a class= "m_h6">Year in school: </a> <a class= "m_h5" >Junior <br/> <a class= "m_h6">Hometown: </a> <a class= "m_h5" >Jeju, Korea</a>
+                            <a class = "m_h6" ><br/><br/>"And surely I am with you always, to the very end of the age"</a>  
                         </div>
                     </div>
                 </div>
@@ -191,15 +193,15 @@
         <div id="popup4" class="overlay">
                 <div class="popup">
                 <br/>
-                    <a class= "m_h7">VICE PRESIDENT<br/></a>
+                    <a class= "m_h7">Treasurer<br/></a>
                     <a class="close" href="#">&times;</a>
                     <div class="content">
-                        <img src = "{% static '/image/KakaoTalk_20201121_182050954.jpg' %}" alt = "Jeongwoo Kim - 김정우" class = "m_popimg" >
+                        <img src = "{% static '/image/m_은호.jpg' %}" alt = "Eunho Jo - 조은호" class = "m_popimg" >
                         
                         <div class = "m_popcont">    
-                            <a class= "m_h8"> Cindy Lee - </a> <a class = "m_h9" >이서현 <br/><br/> </a>
-                            <a class = "m_h6" >Major: </a> <a class= "m_h5" >Marketing, Computer Information System <br/> <a class= "m_h6">Year in school: </a> <a class= "m_h5" >Sophomore <br/> <a class= "m_h6">Hometown: </a> <a class= "m_h5" >Seoul, Korea</a>
-                            <a class = "m_h6" ><br/><br/>"Better late than never"</a> 
+                            <a class= "m_h8"> Eunho Jo - </a> <a class = "m_h9" >조은호 <br/><br/> </a>
+                            <a class = "m_h6" >Major: </a> <a class= "m_h5" >Computer Science <br/> <a class= "m_h6">Year in school: </a> <a class= "m_h5" >Sophomore <br/> <a class= "m_h6">Hometown: </a> <a class= "m_h5" >Seoul, Korea</a>
+                            <a class = "m_h6" ><br/><br/>"Success is the ability to go from one failure to another with no loss of enthusiasm."</a> 
                         </div>
                 </div>
             </div>
@@ -209,15 +211,15 @@
             <div id="popup5" class="overlay">
                 <div class="popup">
                 <br/>
-                    <a class = "m_h7">   PRESIDENT<br/></a>
+                    <a class = "m_h7">Event Organizer<br/></a>
                     <a class ="close" href="#">&times;</a>
                     <div class ="content">
-                        <img src = "{% static '/image/KakaoTalk_20201121_182050954.jpg' %}" alt = "Jeongwoo Kim - 김정우" class = "m_popimg" >
+                        <img src = "{% static '/image/m_규환.jpg' %}" alt = "Kyuhwan Lyoo - 류규환" class = "m_popimg" >
 
                         <div class = "m_popcont">
-                            <a class = "m_h8"> Jeongwoo Kim - </a> <a class = "m_h9" >김정우 <br/><br/> </a>
-                            <a class = "m_h6" >Major: </a> <a class= "m_h5" >Psychology <br/> <a class= "m_h6">Year in school: </a> <a class= "m_h5" >Sophomore <br/> <a class= "m_h6">Hometown: </a> <a class= "m_h5" >Cheongju, Korea</a>
-                            <a class = "m_h6" ><br/><br/>"Don't dream it, be it"</a>  
+                            <a class = "m_h8"> Kyuhwan Lyoo - </a> <a class = "m_h9" >류규환 <br/><br/> </a>
+                            <a class = "m_h6" >Major: </a> <a class= "m_h5" >Biomedical Sicence <br/> <a class= "m_h6">Year in school: </a> <a class= "m_h5" >Sophomore <br/> <a class= "m_h6">Hometown: </a> <a class= "m_h5" >Cheonan, Korea</a>
+                            <a class = "m_h6" ><br/><br/>"The way to get started is to quit talking and begin doing"</a>  
                         </div>
                     </div>
                 </div>
@@ -228,7 +230,7 @@
             <div id="popup6" class="overlay">
                 <div class="popup">
                 <br/>
-                    <a class = "m_h7">   PRESIDENT<br/></a>
+                    <a class = "m_h7">PRESIDENT<br/></a>
                     <a class ="close" href="#">&times;</a>
                     <div class ="content">
                         <img src = "{% static '/image/KakaoTalk_20201121_182050954.jpg' %}" alt = "Jeongwoo Kim - 김정우" class = "m_popimg" >

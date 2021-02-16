@@ -15,7 +15,8 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 1em;
-    z-index: -1;
+    /* z-index: -1; */
+    position: absolute;
   }
   
   
@@ -149,6 +150,7 @@ body {
   padding: 30px;
   margin-top:20px;
   position: static;
+  z-index: 1;
 }
 
 .s_popup {
@@ -169,6 +171,11 @@ body {
     max-height: 80%;
     max-width: 80%;
     position: absolute;
+}
+
+.back_background {
+    /* z-index: -1; */
+    position: relative;
 }
 
 /*   

@@ -30,7 +30,7 @@ function resetTyping(){
 //print each letter
 function a_header(randomArr){
     var target = document.getElementById("a_header");
-    console.log(randomArr);
+    
     //recursion function
     if(randomArr.length > 0){
         target.textContent += randomArr.shift();

@@ -319,9 +319,10 @@ img, p{
 }
 
 .m_background2 {
-    background-color: rgb(141, 160, 133);
+    /*background-color: rgb(141, 160, 133);*/
+    background-color: rgb(160, 103, 70);
     width: 100%;
-    height: 300px;
+    height: 350px;
     padding: 20px;
     position: relative;
     top: 0px;
@@ -333,7 +334,7 @@ img, p{
     top: 100px;
     perspective: 1000px;
     margin-top: -300px;
-    padding-top: 100px;
+    padding-top: 50px;
     padding-bottom: 100px;
     
 }
@@ -393,7 +394,7 @@ img, p{
     color: rgb(3, 3, 3);
 }
 .m_h7 {
-    padding-left: 9%;
+    padding-left: 1%;
     text-align: left;
     font-size: 30px;
     font-family:Georgia, Serif;
@@ -424,9 +425,25 @@ img, p{
     color: rgb(252, 248, 248);
 }
 
-.m_h11{
-    padding-left: 43%;
+.m_h11 {
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+    font-style: normal;
+    font-size: 30px;
+    font-weight: 800;
+    color:rgb(43, 18, 5);
 }
+
+.m_h12 {
+    text-align: center;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    color: rgb(250, 218, 203);
+}
+
 /* text - ends */
 
 
@@ -439,8 +456,6 @@ img, p{
     margin-right: 5%;
 }
 
-
-
 .m_container{
     transition: all 0.5s ease-out;
     -webkit-perspective: 1000;
@@ -449,7 +464,7 @@ img, p{
     perspective: 1000;
     width: 280px; 
     height: 430px;
-    margin-left: 15%;
+    margin-left: 13%;
     margin-top: 50px;
     margin-bottom: 20px;
     display: inline-flex;
@@ -480,6 +495,16 @@ img, p{
     height: 200px;
     border-radius: 50%;
     margin-top: 30px;
+}
+
+.m_image1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-top: 3px;
 }
 
 .m_SNS {
@@ -520,20 +545,26 @@ img, p{
   
 .popup {
     margin: 10% auto;
-    margin-top:200px;
     padding: 20px;
     background: #fff;
     border-radius: 5px;
     width: 50%;
     min-width: 600px;
     max-width: 700px;
-    height: 500px;
+    min-height: 450px;
+    max-height: 500px;
     position: relative;
     transition: all 5s ease-in-out;
 }
   
+.m_icon {
+    margin-left: 3%;
+    margin-bottom: 3%;
+    width: 40px;
+    height: 40px;
+}
 
-.popup .close {
+.popup .close {         /*popup exit button*/
     position: absolute;
     top: 20px;
     right: 30px;
@@ -543,7 +574,7 @@ img, p{
     text-decoration: none;
     color: #333;
 }
-.popup .close:hover {
+.popup .close:hover {   /*change exit button color to red*/
     color: #da2d2d;
 }
 .popup .content {
@@ -551,27 +582,36 @@ img, p{
     overflow: auto;
 }  
 
-.m_popimg {
-    display:block;
+.m_popimg {             /*popup image formet*/
+    display: block;
     margin-left: 5%;
-    margin-top: 40px;
+    margin-top: 2%;
     width: 200px;
-    height: 300px;
-    size:100%;
+    height: 270px;
+    size: 100%;
     position: absolute;
+    border : 3px solid rgb(138, 108, 108);
 }
 
 .m_popcont {
     position: absolute;
     perspective: 1000;
-    top: 20%;
+    top: 22%;
     left: 45%;
     min-width:300px;
     max-width:400px;
     padding-right:2%;
-
 }
 
+.m_popcont1 {
+    position: absolute;
+    perspective: 2000;
+    top: 60%;
+    left: 7%;
+    min-width:300px;
+    max-width:1000px;
+    padding-right:5%;
+}
 
 @media screen and (max-width: 700px){
     .box{

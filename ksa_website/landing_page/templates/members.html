@@ -1,7 +1,7 @@
 {% extends "picture.html" %}
 {% load static %}
 {% block members %}
-    <div>
+    <div class='members', id='members'>
         <img src = "{% static '/image/members_palm_tree.png' %}" alt = "background" class="m_background1">
 
         <div class="m_background2"> </div>
@@ -137,7 +137,7 @@
                 <div class="popup">
                 <br/>
                     <a class = "m_h7">   PRESIDENT<br/></a>
-                    <a class ="close" href="#">&times;</a>
+                    <a class ="close" href="#members">&times;</a>
                     <div class ="content">
                         <img src = "{% static '/image/m_정우.jpg' %}" alt = "Jeongwoo Kim - 김정우" class = "m_popimg" >
 

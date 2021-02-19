@@ -442,11 +442,11 @@ img, p{
 
 /* cards */
 .m_box3{
-    left: 2%;
+    /* margin-left: 10%; */
     width: 100%; 
     height: 2000px;
     perspective: 1000;
-    margin-right: 5%;
+    margin-right: 10%;
 }
 
 
@@ -605,6 +605,11 @@ img, p{
 .child-page-listing h2 {
   margin-top: -180px;
   margin-bottom: 1.5em;
+  font-weight: bold;
+  font-size: 40px;
+  font-family: Tahoma, Geneva, sans-serif;
+  font-style: normal;
+  color: rgb(250, 249, 249);
   text-align: center;
   
 }
@@ -622,6 +627,7 @@ img, p{
 
 .location-listing {
   position: relative;
+  padding-left: 9%;
 }
 
 .location-title-image {
@@ -653,7 +659,7 @@ img, p{
   height: 300px;
   width: 300px;
   top: 0;
-  left: 0;
+  left: 9%;
   opacity: 0;
   transition: opacity .5s;
   background: rgba(90,0,10,0.4);
@@ -751,7 +757,7 @@ img, p{
 }
 
 .s_background {
-  background-color: rgb(141, 160, 133);
+  background-color: rgb(152, 183, 240);
   width: 100%;
   height: 300px;
   padding: 20px;
@@ -777,6 +783,15 @@ img, p{
   max-height: 80%;
   max-width: 80%;
   position: absolute;
+}
+
+.back_background{
+    margin-top: 300px;
+    width: 1875px;
+    height: 1500px;
+    filter: blur(3px);
+    position: absolute;
+    z-index: -1;
 }
 
 

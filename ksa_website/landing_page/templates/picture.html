@@ -1,7 +1,8 @@
-{% extends "aboutKSA.html" %}
+d{% extends "aboutKSA.html" %}
 {% load static %}
 {% block pictures %}
   <div class='picture' id='picture'>
+    <img src="{% static '/image/KSA_gallery_background' %}" class="back_background" alt="KSA gallery background">
     <div class="s_background"></div>
     <div class="child-page-listing">
       <h2>KSA Gallery</h2>
@@ -23,7 +24,7 @@
     
         <article id="3688" class="location-listing">
           <div class='location-title-image'>
-            <a class="location-title" href="{% static '/image/asu_uofa2.jpg' %}">
+            <a class="location-title" href="#s_popup2">
                 ASU & UofA Sports day            </a>
       
             <div class="location-image" id="p_uofa2">
@@ -36,7 +37,7 @@
     
         <article id="3691" class="location-listing">
           <div class='location-title-image'>
-            <a class="location-title" href="{% static '/image/asu_MT.jpg' %}">
+            <a class="location-title" href="#s_popup3">
                 KSA MT            </a>
       
             <div class="location-image">
@@ -49,7 +50,7 @@
     
         <article id="3694" class="location-listing">
           <div class='location-title-image'>
-            <a class="location-title" href="{% static '/image/pic1.jpg' %}">
+            <a class="location-title" href="#s_popup4">
                 2018 Fall MT           </a>
       
             <div class="location-image">
@@ -63,7 +64,7 @@
     
         <article id="3697" class="location-listing">
           <div class='location-title-image'>
-            <a class="location-title" href="{% static '/image/pic2.jpg' %}">
+            <a class="location-title" href="#s_popup5">
                 2018 Fall MT           </a>
       
             <div class="location-image">
@@ -76,7 +77,7 @@
     
         <article id="3700" class="location-listing">
           <div class='location-title-image'>
-            <a class="location-title" href="{% static '/image/pic3.jpg' %}">
+            <a class="location-title" href="#s_popup6">
                 2018 Spring MT           </a>
       
             <div class="location-image">
@@ -90,7 +91,7 @@
 
         <article id="3700" class="location-listing">
           <div class='location-title-image'>
-            <a class="location-title" href="{% static '/image/pic4.jpg' %}">
+            <a class="location-title" href="#s_popup7">
                 2018 Spring MT           </a>
       
             <div class="location-image">
@@ -104,7 +105,7 @@
 
         <article id="3700" class="location-listing">
           <div class='location-title-image'>
-            <a class="location-title" href="{% static '/image/pic5.jpg' %}">
+            <a class="location-title" href="#s_popup8">
                 2018 Spring MT           </a>
       
             <div class="location-image">
@@ -117,7 +118,7 @@
 
         <article id="3700" class="location-listing">
           <div class='location-title-image'>
-            <a class="location-title" href="{% static '/image/pic6.jpg' %}">
+            <a class="location-title" href="#s_popup9">
                 2018 Spring MT           </a>
       
             <div class="location-image">
@@ -130,7 +131,7 @@
 
         <article id="3700" class="location-listing">
           <div class='location-title-image'>
-            <a class="location-title" href="{% static '/image/pic7.jpg' %}">
+            <a class="location-title" href="#s_popup10">
                 2019 Spring Job Seminar           </a>
       
             <div class="location-image">
@@ -143,7 +144,7 @@
 
         <article id="3700" class="location-listing">
           <div class='location-title-image'>
-            <a class="location-title" href="{% static '/image/pic8.jpg' %}">
+            <a class="location-title" href="#s_popup11">
                 2019 Spring Job Seminar           </a>
       
             <div class="location-image">
@@ -157,7 +158,7 @@
 
         <article id="3700" class="location-listing">
           <div class='location-title-image'>
-            <a class="location-title" href="{% static '/image/pic9.jpg' %}">
+            <a class="location-title" href="#s_popup12">
                 2019 Spring Job Seminar           </a>
       
             <div class="location-image">
@@ -171,7 +172,7 @@
 
         <article id="3700" class="location-listing">
           <div class='location-title-image'>
-            <a class="location-title" href="{% static '/image/pic10.jpg' %}">
+            <a class="location-title" href="#s_popup13">
                 ASU Open Door           </a>
       
             <div class="location-image">
@@ -185,7 +186,7 @@
 
         <article id="3700" class="location-listing">
           <div class='location-title-image'>
-            <a class="location-title" href="{% static '/image/pic11.jpg' %}">
+            <a class="location-title" href="#s_popup14">
                 General Meeting           </a>
       
             <div class="location-image">
@@ -199,7 +200,7 @@
 
         <article id="3700" class="location-listing">
           <div class='location-title-image'>
-            <a class="location-title" href="{% static '/image/pic12.jpg' %}">
+            <a class="location-title" href="#s_popup15">
                 General Meeting           </a>
       
             <div class="location-image">
@@ -217,13 +218,167 @@
         <div id="s_popup1" class="s_overlay">
                 <div class="s_popup">
                                     
-                    <a class="s_close" href="#">&times;</a>
+                    <a class="s_close" href="#0">&times;</a>
                     <div class="s_content">
                         <img src = "{% static '/image/asu_uofa.jpg' %}" alt = "asu_uofa" class = "s_popimg" >
                         
                         
+                    </div>
+                </div>
+        </div>
+        <div id="s_popup2" class="s_overlay">
+          <div class="s_popup">
+                                
+              <a class="s_close" href="#0">&times;</a>
+              <div class="s_content">
+                  <img src = "{% static '/image/asu_uofa2.jpg' %}" alt = "asu_uofa2" class = "s_popimg" >
+                  
+                  
+              </div>
+          </div>
+        </div>
+        <div id="s_popup3" class="s_overlay">
+          <div class="s_popup">
+                              
+              <a class="s_close" href="#0">&times;</a>
+              <div class="s_content">
+                  <img src = "{% static '/image/asu_MT.jpg' %}" alt = "asu_MT" class = "s_popimg" >
+                  
+                  
+              </div>
+          </div>
+        </div>
+        <div id="s_popup4" class="s_overlay">
+          <div class="s_popup">
+                              
+              <a class="s_close" href="#0">&times;</a>
+              <div class="s_content">
+                  <img src = "{% static '/image/pic1.jpg' %}" alt = "2018 Fall MT" class = "s_popimg" >
+                  
+                  
                 </div>
             </div>
+        </div>
+        <div id="s_popup5" class="s_overlay">
+          <div class="s_popup">
+                              
+              <a class="s_close" href="#0">&times;</a>
+              <div class="s_content">
+                  <img src = "{% static '/image/pic2.jpg' %}" alt = "2018 Fall MT" class = "s_popimg" >
+                  
+                  
+              </div>
+          </div>
+        </div>
+        <div id="s_popup6" class="s_overlay">
+          <div class="s_popup">
+                              
+              <a class="s_close" href="#0">&times;</a>
+              <div class="s_content">
+                  <img src = "{% static '/image/pic3.jpg' %}" alt = "2018 Spring MT" class = "s_popimg" >
+                  
+                  
+              </div>
+          </div>
+        </div>
+        <div id="s_popup7" class="s_overlay">
+          <div class="s_popup">
+                              
+              <a class="s_close" href="#0">&times;</a>
+              <div class="s_content">
+                  <img src = "{% static '/image/pic4.jpg' %}" alt = "2018 Spring MT" class = "s_popimg" >
+                  
+                  
+              </div>
+          </div>
+        </div>
+        <div id="s_popup8" class="s_overlay">
+          <div class="s_popup">
+                              
+              <a class="s_close" href="#0">&times;</a>
+              <div class="s_content">
+                  <img src = "{% static '/image/pic5.jpg' %}" alt = "2018 Spring MT" class = "s_popimg" >
+                  
+                  
+              </div>
+          </div>
+        </div>
+        <div id="s_popup9" class="s_overlay">
+          <div class="s_popup">
+                              
+              <a class="s_close" href="#0">&times;</a>
+              <div class="s_content">
+                  <img src = "{% static '/image/pic6.jpg' %}" alt = "2018 Spring MT" class = "s_popimg" >
+                  
+                  
+              </div>
+          </div>
+        </div>
+        <div id="s_popup10" class="s_overlay">
+          <div class="s_popup">
+                              
+              <a class="s_close" href="#0">&times;</a>
+              <div class="s_content">
+                  <img src = "{% static '/image/pic7.jpg' %}" alt = "2019 Spring Job Seminar" class = "s_popimg" >
+                  
+                  
+              </div>
+          </div>
+        </div>
+        <div id="s_popup11" class="s_overlay">
+          <div class="s_popup">
+                              
+              <a class="s_close" href="#0">&times;</a>
+              <div class="s_content">
+                  <img src = "{% static '/image/pic8.jpg' %}" alt = "2019 Spring Job Seminar" class = "s_popimg" >
+                  
+                  
+              </div>
+          </div>
+        </div>
+        <div id="s_popup12" class="s_overlay">
+          <div class="s_popup">
+                              
+              <a class="s_close" href="#0">&times;</a>
+              <div class="s_content">
+                  <img src = "{% static '/image/pic9.jpg' %}" alt = "2019 Spring Job Seminar" class = "s_popimg" >
+                  
+                  
+              </div>
+          </div>
+        </div>
+        <div id="s_popup13" class="s_overlay">
+          <div class="s_popup">
+                              
+              <a class="s_close" href="#0">&times;</a>
+              <div class="s_content">
+                  <img src = "{% static '/image/pic10.jpg' %}" alt = "ASU Open Door" class = "s_popimg" >
+                  
+                  
+              </div>
+          </div>
+        </div>
+        <div id="s_popup14" class="s_overlay">
+          <div class="s_popup">
+                              
+              <a class="s_close" href="#0">&times;</a>
+              <div class="s_content">
+                  <img src = "{% static '/image/pic11.jpg' %}" alt = "General Meeting" class = "s_popimg" >
+                  
+                  
+              </div>
+          </div>
+        </div>
+        <div id="s_popup15" class="s_overlay">
+          <div class="s_popup">
+                              
+              <a class="s_close" href="#0">&times;</a>
+              <div class="s_content">
+                  <img src = "{% static '/image/pic12.jpg' %}" alt = "General Meeting" class = "s_popimg" >
+                  
+                  
+              </div>
+          </div>
         </div>
         
     </div>

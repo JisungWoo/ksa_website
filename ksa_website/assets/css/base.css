@@ -480,11 +480,42 @@ img, p{
     height: 2000px;
     perspective: 1000;
     margin-top: 200px;
-    padding-right: 10%;
-    padding-left: 10%;
+    padding-right: 8%;
+    padding-left: 8%;
 }
 
+@media screen and (min-width: 1800px){
+    .m_box3 {
+        width: 100%; 
+        height: 2000px;
+        perspective: 1000;
+        margin-top: 200px;
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+}
 
+@media screen and (min-width: 1500px) and (max-width: 1800px){
+    .m_box3 {
+        width: 100%; 
+        height: 2000px;
+        perspective: 1000;
+        margin-top: 200px;
+        padding-right: 15%;
+        padding-left: 15%;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1500px){
+    .m_box3 {
+        width: 100%; 
+        height: 2000px;
+        perspective: 1000;
+        margin-top: 200px;
+        padding-right: 15%;
+        padding-left: 15%;
+    }
+}
 
 .m_container{
     transition: all 0.5s ease-out;
@@ -495,11 +526,65 @@ img, p{
     min-width: 21%;
     max-width: 24%; 
     height: 430px;
-    margin-left: 90px;
+    margin-left: 80px;
     margin-right: 80px;
     margin-top: 50px;
     margin-bottom: 20px;
     display: inline-flex;
+}
+
+@media screen and (min-width: 1800px){
+    .m_container{
+        transition: all 0.5s ease-out;
+        -webkit-perspective: 1000;
+        -moz-perspective: 1000;
+        -o-perspective: 1000;
+        perspective: 1000;
+        min-width: 21%;
+        max-width: 24%; 
+        height: 430px;
+        margin-left: 90px;
+        margin-right: 80px;
+        margin-top: 50px;
+        margin-bottom: 20px;
+        display: inline-flex;
+    }
+}
+
+@media screen and (min-width: 1500px) and (max-width: 1800px){
+    .m_container{
+        transition: all 0.5s ease-out;
+        -webkit-perspective: 1000;
+        -moz-perspective: 1000;
+        -o-perspective: 1000;
+        perspective: 1000;
+        min-width: 21%;
+        max-width: 24%; 
+        height: 430px;
+        margin-left: 130px;
+        margin-right: 130px;
+        margin-top: 50px;
+        margin-bottom: 20px;
+        display: inline-flex;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1500px){
+    .m_container{
+        transition: all 0.5s ease-out;
+        -webkit-perspective: 1000;
+        -moz-perspective: 1000;
+        -o-perspective: 1000;
+        perspective: 1000;
+        min-width: 21%;
+        max-width: 24%; 
+        height: 430px;
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-top: 50px;
+        margin-bottom: 20px;
+        display: inline-flex;
+    }
 }
 
 .m_human {

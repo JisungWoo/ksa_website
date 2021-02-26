@@ -1,59 +1,61 @@
 {% extends "base.html" %}
 {% load static %}
 {% block about_ksa %}
-
-    <div class="logo_title">
-        <!-- Fist page  -->
-        <div class="a_firstPage">
-            <img src = "{% static '/image/firstBackground.png' %}" alt = "Firstbackground" >
-
-            <div class="a_homeLogo">
-                <img id="a_logo" src="{% static '/image/logo.png' %}" alt="logo">
-                <h1 id="a_KSAshort">KSA</h1>
-                <h4 id="a_KSAlong">ASU Korean Student Association</h4>
-            </div>
-
-            <div class="a_icon">
-                <a href="https://www.instagram.com/asu_ksa/?hl=en"><img src="{% static '/image/instagram.png' %}" alt="instaLogo" style="width:37px;height:35px;padding-right:7px;"></a>
-                <a href="https://www.facebook.com/AZKoreanAssociation"><img src="{% static '/image/facebook.png' %}" alt="faceLogo" style="width:37px;height:35px;padding-left:7px;"></a>
-            </div>
+    <div>
+        <div class="a_background">
+            <img src = "{% static '/image/a_firstBackground.png' %}" style="width:100%; height:100%" alt = "Firstbackground" >
         </div>
-    </div>
-        <!-- About KSA -->
-    <div class="about_ksa" id="about_ksa">
-        <div class="a_container">
-            <div class="a_content1">
-                <img id="a_koFlag" style="width:9%;" src="{%static '/image/korea.png' %}" alt="koFlag">
-                <img id="a_line" style="width:19%;" src="{%static '/image/line.png' %}" alt="line">
-                <img id="a_university" style="width:17%;" src="{%static '/image/university.png' %}" alt="uni">
-                <img id="a_line" style="width:19%;" src="{%static '/image/line.png' %}" alt="line">
-                <img id="a_usaFlag" style="width:9%;" src="{%static '/image/usa.png' %}" alt="usaFlag">
-            </div>
-        
-            <div class="a_content2" class="col-md-7" data-aos="fade-down">
-                <h1 id="a_header" class="a_lg-text">
-                </h1>
-            </div>
 
-            <div class="a_content3">
-                <div class="a_cont3Box1">
-                    <p id='a_koBt' style='display: none'><b style="font-size: 20px;">KSA </b>저희 asu ksa는 asu 재학생, 동문, 입학예정인분들을 돕기위해 만들어진 한인동아리 입니다. 저희 동아리는 60여명의 회원들이 함께 회원들의 친목 도모 및 지역 사회와의 교류를 통한 다양한 이벤트를 진행하며 활발하게 활동중에 있습니다. 저희 학생회는 한인 네트워크를 형성하는 공식적인 소통의 장입니다.
-                    </p>     
-                    <p id='a_enBt' class="col-md-7" data-aos="fade-up"><b style="font-size: 20px;">KSA </b>is simply dummy text of the printing and typesetting industry.
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                        when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                        It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
-                        It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
-                        and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                    </p>  
-                </div>  
-                <!-- Button div -->
-                <div class="a_cont3Box2">
+        <div class="a_logo_title">
+            <!-- <div class="a_home"> -->
+                <div class="a_homeLogo">
+                    <img id="a_logo" src="{% static '/image/a_logo.png' %}" alt="logo" style="width:250px;height:250px">
+                    <h1 id="a_KSAshort">KSA</h1>
+                    <h4 id="a_KSAlong">ASU Korean Student Association</h4>
+                </div>
+
+                <div class="a_icon">
+                    <a href="https://www.instagram.com/asu_ksa/?hl=en"><img src="{% static '/image/a_instagram.png' %}" alt="instaLogo" style="width:43px;height:41px;padding-right:7px;"></a>
+                    <a href="https://www.facebook.com/groups/146189828808343"><img src="{% static '/image/a_facebook.png' %}" alt="faceLogo" style="width:43px;height:41px;padding-left:7px;"></a>
+                </div>
+            <!-- </div> -->
+        </div>
+    
+        <!-- About KSA -->
+        <div class="about_ksa" id="about_ksa">
+            <div class="a_container">
+                <img src = "{% static '/image/a_secondBackground.png' %}" style="width:100%; height:100%" alt = "Secondbackground" >
+                <div class="a_content1">
+                    <img id="a_koFlag" style="width:9%;" src="{%static '/image/a_korea.png' %}" alt="koFlag">
+                    <img id="a_line" style="width:19%;" src="{%static '/image/a_line.png' %}" alt="line">
+                    <img id="a_university" style="width:17%;" src="{%static '/image/a_university.png' %}" alt="uni">
+                    <img id="a_line" style="width:19%;" src="{%static '/image/a_line.png' %}" alt="line">
+                    <img id="a_usaFlag" style="width:9%;" src="{%static '/image/a_usa.png' %}" alt="usaFlag">
+                </div>
+                <div class="a_big">
+                    <div class="a_content2" class="col-md-7" data-aos="fade-down">
+                        <h1 id="a_header" class="a_lg-text">
+                        </h1>
+                    </div>
+                </div>
+                    <div class="a_content3">
+                        <p id='a_koBt' style='display: none; font-size:17px; line-height:45px'>저희 asu ksa는 asu 재학생, 동문, 입학예정인분들을 돕기위해 만들어진 한인동아리 입니다. 
+                            저희 동아리는 60여명의 회원들이 함께 회원들의 친목 도모 및 지역 사회와의 교류를 통한 다양한 이벤트를 진행하며 활발하게 활동중에 있습니다. 저희 학생회는 한인 네트워크를 형성하는
+                            공식적인 소통의 장입니다.
+                        </p>     
+                        <p id='a_enBt' class="col-md-7" data-aos="fade-up" style='font-size:17px; line-height:45px'><b style="font-size: 20px;">KSA </b>at ASU is a Korean Student Association club designed to provide beneficial consultation for current ASU students, alumni, and prospective students. 
+                            About 60 members are actively engaged by holding various events through promoting socializing among members and interaction with the local community. 
+                            Our club is a formal community to form a Korean network.
+                        </p>  
+                    </div>  
+
+                    <!-- Button div -->
+                <div class="a_content4">
                     <i class="fas fa-globe" style="margin-right:-5px; vertical-align:middle;"></i>
                     <button class="a_button a_button1" style="color: white;" type='a_button1' onclick="toggle_Ko()">KOREAN</button>
                     <span style="font-weight:bold; color:white;">|</span>
-                    <button class="a_button a_button2" style="color:white;" type='a_button2' onclick="toggle_En()">ENGLISH</button>
-                </div> 
+                    <button class="a_button a_button2" style="color:white;" type='a_button2' onclick="toggle_En()">ENGLISH</button> 
+                </div>
             </div>
         </div>
     </div>

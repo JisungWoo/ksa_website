@@ -639,8 +639,12 @@ img, p{
 
 
 /* pictures */
+.pic_padding{
+    padding-top: 150px;
+}
+
 .picture{
-  margin-bottom: 200px;
+  /* margin-bottom: 200px; */
 }
 .child-page-listing h2 {
   margin-top: -180px;
@@ -651,7 +655,17 @@ img, p{
   font-style: normal;
   color: rgb(250, 249, 249);
   text-align: center;
-  
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.61);
+}
+
+.G_discription{
+    text-align: center;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    color: rgb(252, 248, 248);
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.61);
 }
 .grid-container {
   display: grid;
@@ -680,6 +694,7 @@ img, p{
   overflow: hidden;
   height: 100%;
   width: 100%;
+  box-shadow: 3px 3px 9px 4px rgba(0, 0, 0, 0.61);
 }
 
 .location-image img {
@@ -803,6 +818,7 @@ img, p{
   padding: 20px;
   margin-top:20px;
   position: static;
+  box-shadow: 3px 3px 9px 4px rgba(0, 0, 0, 0.61);
 }
 
 .s_popup {

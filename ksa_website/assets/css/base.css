@@ -312,34 +312,42 @@ img, p{
 /* members */
 
 .m_background1 {
-    width: auto;
+    width: 100%;
     height: 2000px;
     filter: blur(4px) brightness(90%);
     position: absolute;
     margin-top: 10%;
-    margin-right: 1.5%;
 }
 
 @media screen and (min-width: 1800px){
     .m_background1 {
-        width: 98.5%;
-        height: 1300px;
+        width: 100%;
+        height: 1400px;
         filter: blur(4px) brightness(90%);
         position: absolute;
         margin-top: 10%;
-        margin-right: 1.5%;
+    }
+}
+
+@media screen and (min-width: 1600px){
+    .m_background1 {
+        width: 100%;
+        height: 1400px;
+        filter: blur(4px) brightness(90%);
+        position: absolute;
+        margin-top: 10%;
     }
 }
 
 
 .m_background2 {
     /*background-color: rgb(141, 160, 133);*/
-    background-color: rgb(78, 89, 122);
+    background-color: rgb(160, 112, 81);
     width: 100%;
     height: 350px;
     padding: 20px;
     position: relative;
-    box-shadow: 3px 3px 9px 4px rgb(32, 39, 65);
+    box-shadow: 3px 3px 9px 4px rgb(65, 47, 32);
     top: 0px;
 }
 
@@ -481,7 +489,7 @@ img, p{
         perspective: 1000;
         margin-top: 200px;
         padding-right: 10%;
-        padding-left: 10%;
+        padding-left: 12%;
     }
 }
 
@@ -754,6 +762,16 @@ img, p{
   color: rgb(250, 249, 249);
   text-align: center;
   text-shadow: 2px 2px rgba(0, 0, 0, 0.61);
+}
+
+.G_discription1{
+    text-align: center;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 50px;
+    color: rgb(252, 248, 248);
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.61);
 }
 
 .G_discription{

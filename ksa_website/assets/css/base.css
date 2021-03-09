@@ -97,7 +97,7 @@ img, p{
     display:block;
     text-align: center;
     position: absolute;
-    bottom: -50%;
+    bottom: -100px;
 }
 
 /* about KSA */

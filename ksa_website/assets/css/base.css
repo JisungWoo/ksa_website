@@ -740,19 +740,10 @@ img, p{
     padding-bottom: 150px;
 }
 
-.picture{
-  /* margin-bottom: 200px; */
-}
-.child-page-listing h2 {
-  margin-top: -180px;
-  margin-bottom: 1.5em;
-  font-weight: bold;
-  font-size: 40px;
-  font-family: Tahoma, Geneva, sans-serif;
-  font-style: normal;
-  color: rgb(250, 249, 249);
-  text-align: center;
-  text-shadow: 2px 2px rgba(0, 0, 0, 0.61);
+
+.child-page-listing {
+  margin-top: -220px;
+  position: relative;
 }
 
 .G_discription1{
@@ -921,10 +912,10 @@ img, p{
 .s_background {
   background-color: rgb(160, 112, 81);
   width: 100%;
-  height: 300px;
+  height: 340px;
   padding: 20px;
   margin-top:20px;
-  position: static;
+  position: relative;
   box-shadow: 3px 3px 9px 4px rgba(0, 0, 0, 0.61);
 }
 

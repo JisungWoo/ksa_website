@@ -939,13 +939,12 @@ img, p{
   position: absolute;
 }
 
-.back_background{
-    margin-top: 300px;
-    width: 100%;
-    height: 1900px;
-    filter: blur(3px);
-    position: absolute;
-    z-index: -1;
+.back_background {
+  width: 100%;
+  height: 1950px;
+  filter: blur(4px) brightness(90%);
+  position: absolute;
+  margin-top: 10%;
 }
 
 

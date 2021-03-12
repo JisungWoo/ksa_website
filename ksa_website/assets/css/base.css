@@ -59,13 +59,13 @@ img, p{
 /* first page */
 
 .a_background{
-    font-family: Tahoma, Geneva, sans-serif;
-    position: fixed;
-    width: 100%;
-    height: 1840px;
-    top:0;
-    left:0;
-    z-index: -2;
+    position: absolute;
+    width: 150%;
+    height: 1300px;
+    left: 0;
+    top: 0;
+    margin-left: -300px; 
+    z-index: -1;
 }
 
 .a_logo_title {
@@ -97,7 +97,7 @@ img, p{
     display:block;
     text-align: center;
     position: absolute;
-    bottom: -100px;
+    bottom: -10px;
 }
 
 /* about KSA */
@@ -109,37 +109,48 @@ img, p{
     color:rgb(255, 255, 255);
 }
 
+/*content0 */
+.a_content0{
+    position: absolute;
+    width : 100%;
+    height : 100%;
+    top:0;
+    left:0;
+}
+
 /* contant1 */
 .a_content1{
     text-align: center;
-    position:absolute;
-    top:7%;
+    position:relative;
     width:100%;
     height:35%;
 }
 
 #a_koFlag{
-    margin-top:2%;
-    margin-left: 13%;
-    position: absolute;
-    top:50px;
-    left:10px;
+    margin-top:5%;
+    margin-left: 10%;
+    display:inline-block;
+    position: relative;
+    /* top:50px;
+    left:10px; */
     border-style: double;
     border-width: 5px;
 }
 
 #a_usaFlag{
-    margin-top:2%;
-    margin-right: 13%;
-    position: absolute;
-    top:50px;
-    right:10px;
+    margin-top:5%;
+    margin-right: 10%;
+    display:inline-block;
+    position: relative;
+    /* top:50px;
+    right:10px; */
     border-style: double;
     border-width: 5px;
 }
 
 #a_line{
     display:inline-block;
+    margin-top:6%;
     margin-bottom: 35px;
     opacity:0.5;
 }
@@ -150,13 +161,9 @@ img, p{
 
 /* contant2 */
 .a_content2{
-    position: absolute;;
-    top:49%;
-    left:20%;
-    right:20%;
+    margin-top: 5%;
     text-align: center;
-    margin: 1px 0;
-    padding:9px 0;
+    position: relative;;    
 }
 
 #a_header h1{
@@ -170,31 +177,46 @@ img, p{
     margin:5px 0;
 }
 
+
 /* contant3 */
 .a_content3{
+    margin-top:3%;
     text-align: center;
-    position:absolute;
-    top:18%;
+    position: relative;;
 }
 
 /* contant4 */
 .a_content4{
     text-align: center;
-    position:absolute;
-    bottom: 2%;
-    left:45%;
-    margin:0;
+    position: absolute;
+    left: auto;
+    margin-top: 9%;
 }
 
 /* language Buttons */
-#a_koBt{
+.a_koBt{
     width:50%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     font-size: 15px;
-    margin-top: 20%;
-    margin-bottom:1%;
+    font-size:17px; 
+    line-height:45px;
+}
+
+.a_enBt{
+    width:50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 15px;
+    font-size:17px; 
+    line-height:45px
+}
+
+#a_koBt{
+    animation: fadeIn 4s;
+    line-height: 25px;
 }
 
 .a_button{
@@ -260,21 +282,6 @@ img, p{
     width: 100%; 
 }
 
-#a_enBt{
-    width:50%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    font-size: 15px;
-    margin-top: 20%;
-    margin-bottom:1%;
-}
-
-#a_koBt{
-    animation: fadeIn 4s;
-    line-height: 25px;
-}
-
 @keyframes fadeIn {
     from{
         opacity:0;
@@ -297,6 +304,16 @@ img, p{
         opacity:1;
     }
 }
+
+/* @media screen and (min-width: 1800px){
+    .m_background1 {
+        width: 100%;
+        height: 1300px;
+        filter: blur(4px) brightness(90%);
+        position: absolute;
+        margin-top: 10%;
+    }
+} */
 
 /* @media screen and (max-width: 700px){
     .a_content2{

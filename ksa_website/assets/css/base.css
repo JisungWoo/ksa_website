@@ -7,6 +7,12 @@ html {
   padding: 0;
   margin-top: 300px
 }
+
+.navbar {
+  background-color: 0;
+  position: absolute;
+}
+
 .nav-item{
     padding-left:2rem;
     padding-top:1rem;
@@ -181,16 +187,18 @@ img, p{
 /* contant3 */
 .a_content3{
     margin-top:3%;
+    height:30%;
     text-align: center;
     position: relative;;
 }
 
 /* contant4 */
 .a_content4{
+    height:10%;
     text-align: center;
-    position: absolute;
-    left: auto;
-    margin-top: 9%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* language Buttons */
@@ -199,7 +207,6 @@ img, p{
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    font-size: 15px;
     font-size:17px; 
     line-height:45px;
 }
@@ -209,7 +216,6 @@ img, p{
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    font-size: 15px;
     font-size:17px; 
     line-height:45px
 }
@@ -305,26 +311,25 @@ img, p{
     }
 }
 
-/* @media screen and (min-width: 1800px){
-    .m_background1 {
-        width: 100%;
-        height: 1300px;
-        filter: blur(4px) brightness(90%);
-        position: absolute;
-        margin-top: 10%;
-    }
-} */
-
-/* @media screen and (max-width: 700px){
-    .a_content2{
-        position: absolute;;
-        top:20%;
-        left:20%;
-        right:20%;
+@media (max-width: 630px){
+    .a_koBt{
+        width:50%;
+        margin-left: auto;
+        margin-right: auto;
         text-align: center;
-        margin: 1px 0;
-        padding:9px 0;
-    } */
+        font-size: 13px; 
+        line-height:40px;
+    }
+    
+    .a_enBt{
+        width:50%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        font-size: 13px; 
+        line-height:40px
+    }
+} 
 
 /* members */
 
@@ -752,6 +757,9 @@ img, p{
 
 
 /* pictures */
+.picture {
+  /* background-color: #333; */
+}
 .pic_padding{
     padding-top: 150px;
     padding-bottom: 150px;
@@ -959,7 +967,7 @@ img, p{
 .back_background {
   width: 100%;
   height: 1950px;
-  filter: blur(4px) brightness(90%);
+  filter: blur(3px) brightness(90%);
   position: absolute;
   margin-top: 10%;
 }

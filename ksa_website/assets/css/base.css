@@ -7,6 +7,12 @@ html {
   padding: 0;
   margin-top: 300px
 }
+
+.navbar {
+  background-color: 0;
+  position: absolute;
+}
+
 .nav-item{
     padding-left:2rem;
     padding-top:1rem;
@@ -60,9 +66,9 @@ img, p{
 
 .a_background{
     font-family: Tahoma, Geneva, sans-serif;
-    position: fixed;
+    position: absolute;
     width: 100%;
-    height: 1840px;
+    height: 110%;
     top:0;
     left:0;
     z-index: -2;
@@ -97,7 +103,7 @@ img, p{
     display:block;
     text-align: center;
     position: absolute;
-    bottom: -100px;
+    bottom: 10%;
 }
 
 /* about KSA */
@@ -182,7 +188,7 @@ img, p{
     text-align: center;
     position:absolute;
     bottom: 2%;
-    left:45%;
+    left:46%;
     margin:0;
 }
 
@@ -735,6 +741,9 @@ img, p{
 
 
 /* pictures */
+.picture {
+  /* background-color: #333; */
+}
 .pic_padding{
     padding-top: 150px;
     padding-bottom: 150px;
@@ -942,7 +951,7 @@ img, p{
 .back_background {
   width: 100%;
   height: 1950px;
-  filter: blur(4px) brightness(90%);
+  filter: blur(3px) brightness(90%);
   position: absolute;
   margin-top: 10%;
 }
